@@ -1,0 +1,2 @@
+PRINT "welcome to wildlife park"
+VDays="mun","tue","thurs","fri","sat","sun"

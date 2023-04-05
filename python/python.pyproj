@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{12e8508a-391f-4690-91f8-3f280d864bd2}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>pygame.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <IsWindowsApplication>False</IsWindowsApplication>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="1.mimenc.txt" />
+    <Content Include="16bit logic.txt" />
+    <Content Include="16bitlogic%28integcirct%29.txt" />
+    <Content Include="16bitlogic%28neat%29.txt" />
+    <Content Include="CMD1.txt" />
+    <Content Include="eggs.bmp" />
+    <Content Include="logic gate 3bit.png" />
+    <Content Include="mfcpp\events.txt" />
+    <Content Include="mfcpp\mfcpp theme pic.png" />
+    <Content Include="mfcpp\primes.txt" />
+    <Content Include="mfcpp\websites.txt" />
+    <Content Include="my logic gate.png" />
+    <Content Include="pip install coode.txt" />
+    <Content Include="pseudocodeinator\1.txt" />
+    <Content Include="questions.txt" />
+    <Content Include="Screenshot 2021-01-03 101008.png" />
+    <Content Include="Screenshot 2021-01-07 083701 %282%29.png" />
+    <Content Include="Screenshot 2021-01-07 083701.png" />
+    <Content Include="testing\celltst.txt" />
+    <Content Include="Untitled.bmp" />
+    <Content Include="Untitled.gif" />
+    <Content Include="Untitled.jpg" />
+    <Content Include="Untitled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="attendancal.py" />
+    <Compile Include="bar drwer.py" />
+    <Compile Include="chat disc test.py" />
+    <Compile Include="chk.py" />
+    <Compile Include="drwer.py" />
+    <Compile Include="hangman.py" />
+    <Compile Include="imged.py" />
+    <Compile Include="isc art.py" />
+    <Compile Include="lets learn python!!.py" />
+    <Compile Include="mfcpp\cryptextention.py" />
+    <Compile Include="mfcpp\eventextention.py" />
+    <Compile Include="mfcpp\factorextention.py" />
+    <Compile Include="mfcpp\graphextention.py" />
+    <Compile Include="mfcpp\installer.py" />
+    <Compile Include="mfcpp\mathextention.py" />
+    <Compile Include="mfcpp\mfcpp.py" />
+    <Compile Include="mfcpp\polydrawer.py" />
+    <Compile Include="mfcpp\quizextention.py" />
+    <Compile Include="mfcpp\testing file.py" />
+    <Compile Include="mfcpp\tstwebprnwebext.py" />
+    <Compile Include="mfcpp\updateextention.py" />
+    <Compile Include="mfcpp\websiteextention.py" />
+    <Compile Include="mimdec.py" />
+    <Compile Include="mimenc.py" />
+    <Compile Include="pi rad.py" />
+    <Compile Include="picalculator.py" />
+    <Compile Include="pie drwer.py" />
+    <Compile Include="polydrawer.py" />
+    <Compile Include="pseudocodeinator\!uneditable.py" />
+    <Compile Include="pseudocodeinator\psedocodeinator.py" />
+    <Compile Include="random bin generator.py" />
+    <Compile Include="somanhelp.py" />
+    <Compile Include="sprite setup.py" />
+    <Compile Include="test multyopen.py" />
+    <Compile Include="test123.py" />
+    <Compile Include="testing\cells test.py" />
+    <Compile Include="testing\download.py" />
+    <Compile Include="testing\extracrypt.py" />
+    <Compile Include="testing\tktst.py" />
+    <Compile Include="testing\tstwebprnwebext.py" />
+    <Compile Include="THE QUICK QUIZ.py" />
+    <Compile Include="thinking.py" />
+    <Compile Include="turtle test.py" />
+    <Compile Include="ultimite quiz1.py" />
+    <Compile Include="unicodeinator.py" />
+    <Compile Include="webprint.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="mfcpp" />
+    <Folder Include="pseudocodeinator" />
+    <Folder Include="testing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.7</Version>
+      <Description>env (Python 3.7 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

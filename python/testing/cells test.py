@@ -1,0 +1,6 @@
+a=open('celltst.txt','r')
+a=a.read()
+a=a.split('\n')
+a1=a[0].split(',')
+a2=a[1].split(',')
+print("{0:<12}  {1:<12} {2:<12}".format(a1[0],a1[1],a1[2]))

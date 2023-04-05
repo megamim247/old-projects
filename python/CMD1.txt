@@ -1,0 +1,842 @@
+Microsoft Windows [Version 10.0.18363.1016]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\muham>acsessC:\Users\muham\OneDrive\Desktop\KRUNKER
+The filename, directory name, or volume label syntax is incorrect.
+
+C:\Users\muham>acsess C:\Users\muham\OneDrive\Desktop\KRUNKER
+'acsess' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\muham>find "[" C:\Users\muham\OneDrive\Desktop\KRUNKER\
+File not found - C:\USERS\MUHAM\ONEDRIVE\DESKTOP\KRUNKER\
+
+C:\Users\muham>find "[" C:\Users\muham\OneDrive\Desktop\KRUNKER\epic
+File not found - C:\USERS\MUHAM\ONEDRIVE\DESKTOP\KRUNKER\EPIC
+
+C:\Users\muham>find "[" C:\Users\muham\OneDrive\Desktop\KRUNKER\EPIC.TXT
+
+---------- C:\USERS\MUHAM\ONEDRIVE\DESKTOP\KRUNKER\EPIC.TXT
+{"map":{"name":"New Krunker Map","terrainSeed":"yxhjj67qo","terrainWidth":1200,"terrainHeight":1200,"terrainMntMlt":0.05,"terrainMntCol":"#707070","terrainGrsCol":"#5e692f","terrainDrtCol":"#7f6238","sizeMlt":2,"ambient":"#97a0a8","light":"#f2f8fc","sky":"#dce8ed","fog":9085094,"fogD":4000,"objects":[{"p":[-100,-10,0],"s":[100,10,100],"meshUUID":"EB118578-A4E9-44F8-949C-04EA01529112","objUUID":"46DC5ED1-51BB-41CB-8CC9-92DC8BA03A52","bm":1},{"p":[0,-10,97],"s":[100,10,100],"meshUUID":"65242BB3-7A95-4B60-ACD0-BB85853FAB27","objUUID":"11C83010-94FE-44D1-9EF8-B8EEA1B29C6E","bm":1},{"p":[-100,-10,99],"s":[100,10,100],"meshUUID":"994E9B6B-97FD-4C4B-9D0F-CA8FFDBABBBB","objUUID":"6FE50EAB-829E-4064-8640-78CC865E0CEB","bm":1},{"p":[-200,-10,6],"s":[100,10,100],"meshUUID":"7F37DDDB-008D-4DFD-895C-FC226F531567","objUUID":"CECCA7B3-A9B8-40EF-82D1-65BDE8F794A6","bm":1},{"p":[198,-10,0],"s":[100,10,100],"meshUUID":"93239006-1F43-4A2D-8E10-1A2C59081C2D","objUUID":"4FFA5E45-EAB3-420A-8D5E-48688CFDDAA4","bm":1},{"p":[-99,-10,195],"s":[100,10,100],"meshUUID":"A3DB854E-52E4-45CE-A79D-F0749E7E78F5","objUUID":"931FF9EB-A132-42CC-A22A-5236A75C2AA9","bm":1},{"p":[0,-10,0],"s":[100,10,100],"meshUUID":"D041B331-0823-469C-8E1B-E66A33932D6F","objUUID":"95DA417B-7A75-4137-B7E3-39F0DCEB0629","bm":1},{"p":[-200,-10,98],"s":[100,10,100],"meshUUID":"EE85B249-E965-4C15-B833-2DE0B6D1202E","objUUID":"23125BF9-2935-40A2-9A26-291637F205A8","bm":1},{"p":[0,-10,195],"s":[100,10,100],"meshUUID":"13EC4AF1-9EDC-4338-B741-FA359C1DFFC3","objUUID":"6ECF9BB8-54E7-43E5-A27C-984C3B012634","bm":1},{"p":[100,-10,195],"s":[100,10,100],"meshUUID":"5E36DB9C-A7FA-452E-A8B1-EF26EB43E8FE","objUUID":"8D30C955-7D3A-4585-84A3-BA526BD236E1","bm":1},{"p":[199,-10,288],"s":[100,10,100],"meshUUID":"88CE5A3D-537A-49AB-B69D-F74DD51A448D","objUUID":"EA9560E7-84B5-4A7D-B8AE-0FC607DA24BF","bm":1},{"p":[0,-10,288],"s":[100,10,100],"meshUUID":"35D5620F-95DE-477B-8733-4AB0A615FB18","objUUID":"01E342E9-A793-4076-A750-13ABC6A9963E","bm":1},{"p":[100,-10,288],"s":[100,10,100],"meshUUID":"FA8F64F5-3EE5-42FB-936F-91C4675FE78C","objUUID":"6558E68C-F1C3-41D9-97EB-9F99A27D4B91","bm":1},{"p":[245,0,10],"s":[10,19,109],"meshUUID":"EF7DD5D5-5E2D-4BD3-BF00-456692596C7C","objUUID":"498F8635-E860-4F91-9D18-EA8B662DC5A9","bm":1},{"p":[53,-11,149],"s":[10,40,144],"meshUUID":"476D0C16-3D90-44EB-9DCB-7E13E3636109","objUUID":"DD7E3C0D-5BF0-4BC2-B10D-0957EE72FFE2","bm":1},{"p":[197,0,-40],"s":[114,19,10],"meshUUID":"3B51FD7D-1E04-48D7-A011-223A1FE486FD","objUUID":"DF752B6D-9B3B-4E88-8005-F545D052F9A5","bm":1},{"p":[198,18,-3],"s":[100,10,74],"meshUUID":"67D8BA4F-9260-4A20-8899-508BD16CCDC2","objUUID":"EABF05AB-692E-412B-BA2F-DF5DA0EA6726","bm":1},{"p":[151,0,41],"s":[2,10,4],"meshUUID":"14E74644-A30C-4921-A6B9-69D686499F34","objUUID":"8C064791-8DE7-4760-8F84-B4F95D43C137","i":3,"bm":1,"t":2},{"p":[151,0,41],"s":[2,10,4],"meshUUID":"CE968E94-9F34-484C-BEC2-72E7130634A1","objUUID":"DF4AE174-15DB-4307-AECA-2D64E8C71197","i":3,"bm":1,"t":2},{"p":[151,0,41],"s":[2,10,4],"meshUUID":"01D0080F-8AA8-4C23-AD21-0BBA19AAF594","objUUID":"EAE3AAC3-93F3-4AEB-9CBC-2066C8D7B969","i":3,"bm":1,"t":2},{"p":[151,16,41],"s":[2,10,4],"meshUUID":"56AAC655-E9AB-4B71-A1FA-1F55F8D775D8","objUUID":"73582E30-7280-463A-87A5-87AE889ACED0","i":3,"bm":1,"t":2},{"p":[151,5,41],"s":[2,10,4],"meshUUID":"327E30EF-5076-43AC-945F-5BA982D41B44","objUUID":"F1AA31ED-9851-42B7-8D39-3E9D82F2936B","i":3,"bm":1,"t":2},{"p":[-149,9,241],"s":[2,10,4],"meshUUID":"0B1094F5-3C96-4C46-B000-9CCB8581374E","objUUID":"F8FEA687-84FF-447F-8CE1-8C5E18FD5BAD","i":3,"bm":1,"t":2},{"p":[-149,5,241],"s":[2,10,4],"meshUUID":"0FBD30FA-0A80-4FBB-99FE-520D1631DE3D","objUUID":"6059987A-362F-4BA4-9149-2836AC731544","i":3,"bm":1,"t":2},{"p":[628,18,477],"s":[100,10,74],"meshUUID":"39997AEF-B1EB-4AE4-B0D7-F593D0CFD09F","objUUID":"DAB67D6C-FBB3-424C-81BB-3AA07CA054D2","bm":1},{"p":[615,27,510],"s":[78,19,10],"meshUUID":"36857EC1-6DA4-4F14-99D3-6939FA311BD0","objUUID":"411EB020-A76C-411C-8B57-00B98B1A08E3","bm":1},{"p":[631,27,445],"s":[100,19,10],"meshUUID":"CE54C1F0-1F45-4A86-BD
+C:\Users\muham>FIND "1" C:\Users\muham\OneDrive\Desktop\math+sci\EX3.DOCX
+
+---------- C:\USERS\MUHAM\ONEDRIVE\DESKTOP\MATH+SCI\EX3.DOCX
+1Θ╙]¢H╓g╧⌡má@╚µ█√m°
+òà╝Ñ1x╓pΓ¢µ÷f²╩#I)╩âïYè╧æ°êÿ═└σ*D÷σºi")╧╘c$│ú₧qU╫≈ÿ~3áÖ1╒╓jH[{¬=E╛å║╬~
+:òF=─≤Ωh=ÖΩE=¢εY▀è[Ç°$Ä¡Kq{eI▐╣° í%5┤▒╗B @■òπvä▒∞┘┌ûÄ6╚í╘┴ù┌╨Eöä ₧¡ìu┤¡UHPL└U╠a${¥iw∩╒v┤bV└ä\jcB╦!*µi╗Z~πê·ê\∩╖┌nùå≤sM+┘@ΣSH¡δDùQ∙ä╕V╢í8ê|H╘a>G└Ä}¿â?S\+▌ÉäN]ynæ╪Ya■ûC╜|ï-Φ8ε⌡₧d╚╣,nwëk%@:4ê.┼jüU┤R&═Gz      Gæìáσ^φyH-╫wµçi%£ç4ÄΘ╒1'!     a¿ó7S\+ßÇ∩╦╖¥Kqêσp#╒;S\+ßE.φ+╧aÇπα;≈|yU]╛δα(ε∞⌐_;ïΩ7±Q╚∩{oƒKπoû¿0Éa÷û⌡sF╙ô«-K┼k≤¢:■µφ?9$o▄![}[x[F*▀═~┬≈D-\■0Çv?Ñ╔7[15▀╣╝£┌[ƒìnÑ╤L■─rP╫\s.╬Ü¢¥ΦÜâ\╩ïV÷╢uÆ▓~N╫¥±⌠[ú.<^æW∞5ΘVUùn╘]∞^√δÅ9²ì≤ⁿ?
+1
+E?¿,   ═⌠ß┐»HIδ╨`║≡r«ÿs╧Ç6█╧┴èwî╘{ºá╚rΦî»{╫*x⌐»εAkWkδ*æ`[^^l₧╨jNK╘⌡üDó8R╨1ç╡öd:4e>áK/ìÅâµ4╞Vm^uïròτw2NP₧0┼«Vw⌡5êj°╢oÜ▐αâ7o:>S!?p î╠Θ8JX[dô0KDÉτEVKè╨ïc2ºP,¬└ú┼⌐└a₧½┐]▓₧╙.■╢╞∩░ÿs╕Y╥í±Ä+╜╖ÅƒΦ(!O>z∙
+word/theme/theme1.xml∞YKïG╛≥å╣╦z═Φa¼5╥H≥k╫6▐╡âÅ╜Rkª¡₧i╤▌┌╡0å`ƒr      £ÉC╣σB1─ΣÆc░I£æΩI3-⌡─Å]â ╗éU?╛¬■║¬║║4sßΓ²ÿ:Gÿ┬ÆÄ[=Wq£î╪ÿ$a╟╜}0,╡\GHöîe        ε╕,▄ï;ƒv¥ùÄ▒≥ë8Å:n$σ∞|╣,F0î─96├    ╠MÅæä.╦cÄÄAoL╦╡JÑQÄI\'A1¿╜1ÖÉvöJwgÑ|@ß_"àQ╛»TcCBc╟╙¬·Pε!┌qa¥1;>└≈ÑδP$$Lt▄è■s╦;╩k!*dsrC²╖ö[
+!è£¢LZI0≤ä¿>°%àε╛C░ßε╖ƒφ█Éå∞ófµ▄v$03╧πéN╢)∩≥╪H▒]N¼╤╤¢çFh∩bL╤1c∞▄╛b├│Öa≤î⌠▓╩el│═Ud╞¬Ω'X@¡ñèïcë0Bvç¼Ç╧▐b#±,P#^ñ∙·╘Ö\u▒5^ΘhjñR┬╒í╡ô╕!bcàZoF+╒÷x]p├∩r╞@µ▐╚α≈ûü─■╬╢9@╘X ÿUå-▌éêß■LD'-6╖╩M╠C¢╣í╝Q⌠─$yk┤Q√°»÷ü
+π╒O-╪╙⌐w∞└ôT:E╔d│╛)┬mV5πc≥Θ5}4Onb╕G,╨│Üµ¼ª∙▀╫4Eτ∙¼Æ9½d╬*╗╚G¿d▓ΓE?Z=Φ╤ZΓ┬º>BΘ╛\P╝+t┘#α∞Åç0¿;Zh²ÉiAs╣£ü9╥mç3∙æ╤~äf░LU»èÑΩP83&áp╥├V▌jé╬π=6NG½╒╒sM@2ç┬k5eÜLG═∞▐Z╜εà·AδèÇÆ}╣┼Luëµj≡-$⌠╬NàE█┬óÑ╘▓╨_K»└σΣ ⌡H▄≈RFn╥cσºT~σ▌S≈tæ1═m╫,█k+«ºπiâD.▄L╣0îα≥╪>e_╖3ù⌠ö)╢i4[├╫*ëlΣÜÿ=τ╬\▌5#4δ╕°╔═x·ä╩TêåI╟╔Ñí?$│╠╕É}$óªº╥²╟DbεPC¼τ▌@ôî[╡╓T{ⁿD╔╡+ƒ₧σ⌠W▐╔x2┴#Y0Æua.Ub¥=!Xu╪H∩GπcτÉ╬∙-å≥¢Ue└1rm═1ß╣α╬¼╕æ«ûG╤x▀ÆQDgZ▐(∙d₧┬u{M'╖═tsWf╣Ö├P9Θ─╖ε█à╘D.i\ Ω╓┤τÅÅw╔τXey▀`òªε═\╫^σ║ó[ΓΣBÄZ╢ÿAM1╢P╦FMjºXΣû[çf╤q┌╖┴f╘¬bUWΩ▐╓ïmvx"┐╒Ω£Jí⌐┬»Äé╒+╔4Φ╤Uv╣/¥9'≈A┼∩zA═Jòû?(yu»Rj∙▌z⌐δ√⌡Ω└»V·╜┌C0èîΓ¬ƒ«=ä÷║⌡└kZÑFJ^úóΦ╖┌ÑªW½u╜f╖5≡║ù╢å¥»╛Wµ╒╝v■╫(╡δ▌a╔δ≈ZÑv╨Φò·ìá┘÷┐╒>t¥#
+òR╚δâ4▐,¡*"!¡m@>Tèâ=τ+é0º7╩█*≥8├¢8╣Y▐-à╓é_¢£⌡»▌ñ╒√°T╛0b▒rï╧BΦ╫ Ä╙d╡∞*5ΦÇä╥σb·┼q£<≤ l╙≤x╜ÄƒC│≤d╡εkε+σÖiK╖∩r±.Γ±BR4┌ÿí76à╝[╥┌ßü^ENæ╝-Φ√á8bl
+èABH·∙óW#ô╣Q┘áªΘYl├╣╟ΦvºCóß  ├ºÆ}(╢QÅEï:╠>á╥l╝√┼`ï£φ─oΓlô┴;[<╪gK[Ωl⌐▒φáIÿw≡n╕Ñ▒Wé1q °j└ƒÿ║CP;╘ÉU7.@mó3⌠≤Cì÷╣çY2-ñ├■░XgXö╫f┬╞¥}▓Ü¼ªôε╒é9lá╢═ε²3⌐ûH▄c.4ΘB┐MfΘr»º~MR?^&9¢~Æδh|ÿÑï╦√w╓}î_ⁿ
+çⁿ╟°T1vöÑ═Ä3^qDdqⁿ:crÄC╒²╚▀}DIxr²ÿ╩îMcER>
+╘0¼ U╜╒ Ö?╒╫┐¿Çìd°ò╧╪2.r²1╗╦¬Å╒'≤▀ÑLï<x9ay(─╜Ωùé'B╡suûµbñ÷pûg╣`¡;τ·Å╓=a^X¢╧E$F;║┼ⁿ?jτ3ïOG√√⌡û▌â╞╢ÿÑÅ⌡6₧~xÿ╪=▒6M≈t─▓ô3m╕SX∙┐u╕ï═Oªßàiç═
+«┤╕7▐╒╨XhΘ∩}«?ⁿ\Ω1g╦BVì@∙ 
+6¿█85ó9▒í9-í9⌐á9%á9Ä@Gsqîµ8┬┴)dΦèB+╪╤▐═▌>G°q╖O       ~▄φ3Çw{┬≈πn╧∩~▄φΘ▄Å╗={√q╖'k<╖\j╫Jfi1Xe3)ïT<(°δpK╦╘æ4<=Θ±îΣ         0ef½&Γ┴┤ÉÖ╧█#─ê╘>/tü╚Y0Å╦îτâ;╬╙g╦X)!0π┼2sîêOLg|╞3₧å£2░Θá║╥e2%ê═{$c±4"╛ÜHÆV¡Ωτ╣ëΩäàÖ▐5╔╚≥├ì╚çÅòåτ╦8µD¼∩4!fX├kâ^╠≡╩└`åû╧¿å¿óìTE#░èF4ne|Rì[E#╖èF4nm°╕▌ï"6)▐^u∞⌡?wwK}µp?&Γ1ej0|║⌐╬Öw,cÅ[╠}V║k3╢¥s╜≈s┌èD╡«7!ríÄZñ╦ß┌áQëk┼#Æ╫èG$░o╕─n╒2Y/╨«hΩÖ╔rZ┤è╓Ézëv┬Γe╣á«6VÅ░╡
+.Eûô╔áK┴▀⌡rV╗ô"≤¡{9╝ck╓pYmf%╥εUHé^╞2|óI├Wo₧⌐▓∞i0ΘR╞▒|ßqRd▓î5[≥√╞%╜$ -Y╠Y.L¡╘@⌠ƒΩδké[╢|@w1)ì▀╛}Hÿê║─╒²φMp/║╠╘$┴H6ä2^&iNy─åGx└åG}╝ä!cxºΣ∩Öê╚£a`T₧00*7òî╘├»╨▒`├/╙▒`├»╒)aDK
+Fgñ╙?╤»<î*╬î*╬î*╬î*╬╛|6Sï`║)╞BR┼£àñ¢h╥é'Ö▒∞∙-µÅîαiI╗╦ΣL▀┐!╙≥"nñ>G.╢Kòô±)Y╫4ï▓_gDYKItnm=ß╦µ╡k█╠╠¥â╗p│π├φ╞δòD├≥¿º%ls╝▌r╜JnX≈┤äm~Ωiit┌░∞╥├Wû=╡┬qWⁿ¼j<G≡wE╤╩╕╡┘«@ZY╢àαqW5ñ£àí■╡
+]±Y²DΘ║╠~╓╙y┼~ ƒ«¬N²┤oσ╢Q²Qu»▄¼■≈"£K∙┤▐xx`Ωì~1ìà4º¿?½█\sIΩç╧▌w°╪⌠ü]¬εà0┐Ö°a_KpNσ░+ΣmKPΣvE║m V¥ç]┘╫╢╙αaW╥5║¼eåu╡┐P▌¼½!┴╦╒+[[µpê╗r┤G╕+3[åpÇ╗≥▒exΦΣ╝i}╘s£╞½δKí+-┬▒¢╨û╨Wu:å┬Φδ47í»≈▄ä╛ntP■tb≡Äuú╨vúⁿ\
+        XWC╓╒ÉασjÇ±w5Dy╗ó║\m╬ó4\ì≥░eÄ[äYå╕    ┘2─%g╦╨úZ▓¼=½%ïαY-A_╒>╟UK╢╙▄ä╛▐s·║╤M@∙╙ë┴;╓ìB{╪ì≥s5«Zjs╡┐P▌¼½q╒Æ╙╒╕j⌐╙╒╕j⌐╙╒╕j╔φj\╡╘µj\╡╘µj Σ∞&x╣W-u║W-u║W-╣]ì½û┌\ì½û┌\ì½û┌\=pBvbⁿ]ì½û:]ì½û▄«╞UKm«╞UKm«╞UKm«╞UKNWπ¬ÑNWπ¬ÑNWπ¬%╖½q╒R¢½q╒R¢½q╒R¢½q╒Æ╙╒╕j⌐╙╒╕j⌐╙╒╕jΘVéG@Mû▌≤Γ«X>/╪≡ç>ñ╧eⁿ╠úÇ÷PoPG╣≤╥x²òf¢Φ⌐∩j╠⌠╨¡█òó≥ ░╨|±:Z╜ªJδ₧╒┴¬═ª├╒╧╡eï╞pKS+x⌡[±>└»▀LeZÿ2uT?⌠hÇ╞S²`─ûφ: Ωφu3sûò{╫íZºcs 7∩σ$╦ET[∞ε₧}>>·zYV∩3{Γ|±]u╔l╙ö╦xn>¡_u6╒ÅSârhε╞¬^|V╔XûÅq║yÄδvj_V-t╛5Ä²┘±╓8╜≤[╡M∩o╝8«a╣~q£▐|╛zq\¿e_≈k ≥Φ≡│╛∙▓I  º#féë!│Y_Ñó@τ╒0Y»₧½Æxπ╒sf¢⌡9G4à╩æ,¼₧ä▄Ωë╞½[≥╠≤î7π╠±╪cGîT]½»=d▄².t·∞Φ│I»¥è+3░3ê½(▐╓C╒ƒì╔╙¢²k$»═^V;╒Jg¥█6Æe½£)rKztτ┐ º%╫$W=Z┬<àa╙ì╟N┤y╧5ÑY╨╬Y¡wB╪:│ü7u┌∩Θ,g2≈{:±í╓5ⁿQ≥αßzσ°µª0╖>oxj»Zü█₧*╖!'É±msù åJ╨Ä£;æ¬|╖Q» ╩┐ⁿ
+8EC¼┴≤fà┴⌐╚╙░ûNàÅm=╨Φj═╩X≈r£ªÖ80ß½╩hx@╜uαc/X╤╙╞╘t╘Ük┤CY╘@─⌡8√π9eⁿë▌]@╬ΦÇäUr1çî:è├Gi7r÷ÿ⌠╞@ªa╫╧ÿ╔æτÄ)√9┘╔1σÖ≤┐d╬
+xg¡z₧f╥1Yq╥Æ;╢≥#╝╠PQDazFπN½Ç╔uÇⁿ0σΓσ:╞l`ñÿy╩æ¢δ8╙#GnN8?W╠
+─uê╔í╪δp#═τÅ╡▒Ä¡Æ≡?J╨µ$é├è╒åƒ╕┼πïí_ônnÿ╞äL╔╡ô1╨2cAd█1UÜ╙¥α╛çòñß oÿ ²A┌╦╙Rφ*tá┤╥≤µá∩ÿôí╪>▓╞└╓┤$╦é╥|╣Zæ^╔░:èJq√0(yxWⁿ╝ö±QíAßæ│₧├#τx▀Ö÷£9±╦R|xáStáw"║±{╖>≤ßv6∙#>æ|Æuπ/÷EΦå ú/₧ñÉ|]≥┼jf.8ÆcçîqZè81π½qæ√∩t╚WQ[æ<?^û`Aù~d╞í9û┼φA∙╡VX|
+îÆQO┬0╟▀MⁿK▀╖v Fû15<Ib"Fπ[i¿¼]╙╞╛╜▌╞åï<°v╫√▌ « 6¥ƒd┴XQ¿è#éP¼αBmgΦ}P`U£µàé¬└óyv{ô2¥░┬└½)4'└^I┘äΘ┌9ºî-█üñ6Mσ)à½4\E╗bOƒ¼Φ┴▓,úr▄á~ ._▐Ü½åB╒^1@Y╩YΓä╦!K±%⌠æ=¼┐ü╣÷╕O|╠PWÿLvTJ╩▒6t'dv┼┌÷=Tea╕⌡â╠c,3B; ÿφÇ┴üºsj▌╥┐εF
+¼«╠·╦╘mÄó■!Y▄}Ü₧φn≈x¢Æ╓╘«≥1~z^-P6"#ÆiHεWΣ.ôäÉ»z┼A EP₧°ºΓ4ÖLåè¥@δ╥≡½f?
+£S┴n█0╜╪?║7réE┼ÉbΦa[─m╧£L╟┬dIÉTú┘╫Å╢W┘vÜO∩æ╘╙Iï█╫╬=å¿¥▌▓σódZσjmÅ[÷X}╣Z│"&░5gq╦N┘¡ⁿ°A∞â≤Æ╞XÉäì[╓ªΣ7£G╒bqAiKÖ╞$ö▀çôF≡9 *ù└T║C╣\¡(1S▒ç#F╣|Γ┘à:╩╡α╗¿D═ô╫TòQ±┘{ú$Ω¬ⁿªUp╤5⌐x¡├q┴≤A÷¿^éN'Y
+▀╛y¢Ö8(0╕úç╦LD┴▀ΓaΩ⌠α»O¢Uríê·ìu┼èqh╫û⌡4╪─ª▓ëî╪°ÿé¼t2ñ=≤µe9╓ƒô╕,╔Φü≡Ñ╗±å°╨╨█╥?╠.s│úç╔jf'wv╛π╒¥δ<XΩ/ƒ5°g|⌠ò╗6π¡çù┴lΦ╧:╡èfr╜╬╟ƒ%─üóX╙<τæ╠qOfÉº│÷ê⌡╣µ∩─░PO╙_*ù7ïÆ╛qâ╬1┌â∙≈æ┐
+1
+word/theme/theme1.xmlPK-
+
+C:\Users\muham>color 02
+
+C:\Users\muham>help/all
+This command is not supported by the help utility.  Try "/all /?".
+
+C:\Users\muham>/all/?
+'/all/?' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\muham>/all /?
+'/all' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\muham>help /all /?
+Provides help information for Windows commands.
+
+HELP [command]
+
+    command - displays help information on that command.
+
+C:\Users\muham>help /all
+This command is not supported by the help utility.  Try "/all /?".
+
+C:\Users\muham>ALL/?
+'ALL' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\muham>HELP HELP
+Provides help information for Windows commands.
+
+HELP [command]
+
+    command - displays help information on that command.
+
+C:\Users\muham>HELP HELP HELP
+Provides help information for Windows commands.
+
+HELP [command]
+
+    command - displays help information on that command.
+
+C:\Users\muham>HELP
+For more information on a specific command, type HELP command-name
+ASSOC          Displays or modifies file extension associations.
+ATTRIB         Displays or changes file attributes.
+BREAK          Sets or clears extended CTRL+C checking.
+BCDEDIT        Sets properties in boot database to control boot loading.
+CACLS          Displays or modifies access control lists (ACLs) of files.
+CALL           Calls one batch program from another.
+CD             Displays the name of or changes the current directory.
+CHCP           Displays or sets the active code page number.
+CHDIR          Displays the name of or changes the current directory.
+CHKDSK         Checks a disk and displays a status report.
+CHKNTFS        Displays or modifies the checking of disk at boot time.
+CLS            Clears the screen.
+CMD            Starts a new instance of the Windows command interpreter.
+COLOR          Sets the default console foreground and background colors.
+COMP           Compares the contents of two files or sets of files.
+COMPACT        Displays or alters the compression of files on NTFS partitions.
+CONVERT        Converts FAT volumes to NTFS.  You cannot convert the
+               current drive.
+COPY           Copies one or more files to another location.
+DATE           Displays or sets the date.
+DEL            Deletes one or more files.
+DIR            Displays a list of files and subdirectories in a directory.
+DISKPART       Displays or configures Disk Partition properties.
+DOSKEY         Edits command lines, recalls Windows commands, and
+               creates macros.
+DRIVERQUERY    Displays current device driver status and properties.
+ECHO           Displays messages, or turns command echoing on or off.
+ENDLOCAL       Ends localization of environment changes in a batch file.
+ERASE          Deletes one or more files.
+EXIT           Quits the CMD.EXE program (command interpreter).
+FC             Compares two files or sets of files, and displays the
+               differences between them.
+FIND           Searches for a text string in a file or files.
+FINDSTR        Searches for strings in files.
+FOR            Runs a specified command for each file in a set of files.
+FORMAT         Formats a disk for use with Windows.
+FSUTIL         Displays or configures the file system properties.
+FTYPE          Displays or modifies file types used in file extension
+               associations.
+GOTO           Directs the Windows command interpreter to a labeled line in
+               a batch program.
+GPRESULT       Displays Group Policy information for machine or user.
+GRAFTABL       Enables Windows to display an extended character set in
+               graphics mode.
+HELP           Provides Help information for Windows commands.
+ICACLS         Display, modify, backup, or restore ACLs for files and
+               directories.
+IF             Performs conditional processing in batch programs.
+LABEL          Creates, changes, or deletes the volume label of a disk.
+MD             Creates a directory.
+MKDIR          Creates a directory.
+MKLINK         Creates Symbolic Links and Hard Links
+MODE           Configures a system device.
+MORE           Displays output one screen at a time.
+MOVE           Moves one or more files from one directory to another
+               directory.
+OPENFILES      Displays files opened by remote users for a file share.
+PATH           Displays or sets a search path for executable files.
+PAUSE          Suspends processing of a batch file and displays a message.
+POPD           Restores the previous value of the current directory saved by
+               PUSHD.
+PRINT          Prints a text file.
+PROMPT         Changes the Windows command prompt.
+PUSHD          Saves the current directory then changes it.
+RD             Removes a directory.
+RECOVER        Recovers readable information from a bad or defective disk.
+REM            Records comments (remarks) in batch files or CONFIG.SYS.
+REN            Renames a file or files.
+RENAME         Renames a file or files.
+REPLACE        Replaces files.
+RMDIR          Removes a directory.
+ROBOCOPY       Advanced utility to copy files and directory trees
+SET            Displays, sets, or removes Windows environment variables.
+SETLOCAL       Begins localization of environment changes in a batch file.
+SC             Displays or configures services (background processes).
+SCHTASKS       Schedules commands and programs to run on a computer.
+SHIFT          Shifts the position of replaceable parameters in batch files.
+SHUTDOWN       Allows proper local or remote shutdown of machine.
+SORT           Sorts input.
+START          Starts a separate window to run a specified program or command.
+SUBST          Associates a path with a drive letter.
+SYSTEMINFO     Displays machine specific properties and configuration.
+TASKLIST       Displays all currently running tasks including services.
+TASKKILL       Kill or stop a running process or application.
+TIME           Displays or sets the system time.
+TITLE          Sets the window title for a CMD.EXE session.
+TREE           Graphically displays the directory structure of a drive or
+               path.
+TYPE           Displays the contents of a text file.
+VER            Displays the Windows version.
+VERIFY         Tells Windows whether to verify that your files are written
+               correctly to a disk.
+VOL            Displays a disk volume label and serial number.
+XCOPY          Copies files and directory trees.
+WMIC           Displays WMI information inside interactive command shell.
+
+For more information on tools see the command-line reference in the online help.
+
+C:\Users\muham>HELP PRINT
+Prints a text file.
+
+PRINT [/D:device] [[drive:][path]filename[...]]
+
+   /D:device   Specifies a print device.
+
+
+C:\Users\muham>HELP XCOPY
+Copies files and directory trees.
+
+XCOPY source [destination] [/A | /M] [/D[:date]] [/P] [/S [/E]] [/V] [/W]
+                           [/C] [/I] [/Q] [/F] [/L] [/G] [/H] [/R] [/T] [/U]
+                           [/K] [/N] [/O] [/X] [/Y] [/-Y] [/Z] [/B] [/J]
+                           [/EXCLUDE:file1[+file2][+file3]...]
+
+  source       Specifies the file(s) to copy.
+  destination  Specifies the location and/or name of new files.
+  /A           Copies only files with the archive attribute set,
+               doesn't change the attribute.
+  /M           Copies only files with the archive attribute set,
+               turns off the archive attribute.
+  /D:m-d-y     Copies files changed on or after the specified date.
+               If no date is given, copies only those files whose
+               source time is newer than the destination time.
+  /EXCLUDE:file1[+file2][+file3]...
+               Specifies a list of files containing strings.  Each string
+               should be in a separate line in the files.  When any of the
+               strings match any part of the absolute path of the file to be
+               copied, that file will be excluded from being copied.  For
+               example, specifying a string like \obj\ or .obj will exclude
+               all files underneath the directory obj or all files with the
+               .obj extension respectively.
+  /P           Prompts you before creating each destination file.
+  /S           Copies directories and subdirectories except empty ones.
+  /E           Copies directories and subdirectories, including empty ones.
+               Same as /S /E. May be used to modify /T.
+  /V           Verifies the size of each new file.
+  /W           Prompts you to press a key before copying.
+  /C           Continues copying even if errors occur.
+  /I           If destination does not exist and copying more than one file,
+               assumes that destination must be a directory.
+  /Q           Does not display file names while copying.
+  /F           Displays full source and destination file names while copying.
+  /L           Displays files that would be copied.
+  /G           Allows the copying of encrypted files to destination that does
+               not support encryption.
+  /H           Copies hidden and system files also.
+  /R           Overwrites read-only files.
+  /T           Creates directory structure, but does not copy files. Does not
+               include empty directories or subdirectories. /T /E includes
+               empty directories and subdirectories.
+  /U           Copies only files that already exist in destination.
+  /K           Copies attributes. Normal Xcopy will reset read-only attributes.
+  /N           Copies using the generated short names.
+  /O           Copies file ownership and ACL information.
+  /X           Copies file audit settings (implies /O).
+  /Y           Suppresses prompting to confirm you want to overwrite an
+               existing destination file.
+  /-Y          Causes prompting to confirm you want to overwrite an
+               existing destination file.
+  /Z           Copies networked files in restartable mode.
+  /B           Copies the Symbolic Link itself versus the target of the link.
+  /J           Copies using unbuffered I/O. Recommended for very large files.
+
+The switch /Y may be preset in the COPYCMD environment variable.
+This may be overridden with /-Y on the command line.
+
+C:\Users\muham>XCOPY C:\Users\muham\OneDrive\Desktop
+C:\Users\muham\OneDrive\Desktop\all-projects.zip
+C:\Users\muham\OneDrive\Desktop\Among Us.lnk
+C:\Users\muham\OneDrive\Desktop\Annotation 2020-06-23 121126.png
+C:\Users\muham\OneDrive\Desktop\Annotation 2020-06-23 121344.png
+C:\Users\muham\OneDrive\Desktop\Annotation 2020-06-23 122059.png
+C:\Users\muham\OneDrive\Desktop\Annotation 2020-06-23 122300.png
+C:\Users\muham\OneDrive\Desktop\Annotation 2020-07-11 125815.png
+C:\Users\muham\OneDrive\Desktop\Annotation 2020-07-11 125934.png
+C:\Users\muham\OneDrive\Desktop\Annotation 2020-07-13 133324.png
+C:\Users\muham\OneDrive\Desktop\Annotation 2020-09-02 081509.png
+C:\Users\muham\OneDrive\Desktop\Annotation 2020-09-03 075624.png
+C:\Users\muham\OneDrive\Desktop\Annotation 2020-09-03 081709.png
+C:\Users\muham\OneDrive\Desktop\ANote.wav
+C:\Users\muham\OneDrive\Desktop\application.docx
+C:\Users\muham\OneDrive\Desktop\Asphalt 8.lnk
+C:\Users\muham\OneDrive\Desktop\background.jpg.jpeg
+C:\Users\muham\OneDrive\Desktop\Blackmoor 2.lnk
+C:\Users\muham\OneDrive\Desktop\BlueStacksInstaller_4.220.0.1109_native_0a6d0aef44903e594c267a3ec47b2187_QW1vbmcgVXM=.exe
+C:\Users\muham\OneDrive\Desktop\BlueStacksInstaller_4.220.0.1109_native_58c169a1d7ee34aaa090ed7eecc14e73_QW1vbmcgVXM=.exe
+C:\Users\muham\OneDrive\Desktop\BNote.wav
+C:\Users\muham\OneDrive\Desktop\CNote.wav
+C:\Users\muham\OneDrive\Desktop\com.puravidaapps.TaifunFlashlight (1).aix
+C:\Users\muham\OneDrive\Desktop\dentistry_app (1).aia
+C:\Users\muham\OneDrive\Desktop\dentistry_app_copy (1).apk
+C:\Users\muham\OneDrive\Desktop\dentistry_app_copy (2).apk
+C:\Users\muham\OneDrive\Desktop\dentistry_app_copy.apk
+C:\Users\muham\OneDrive\Desktop\Desktop - Shortcut.lnk
+C:\Users\muham\OneDrive\Desktop\DNote.wav
+C:\Users\muham\OneDrive\Desktop\email draft.docx
+C:\Users\muham\OneDrive\Desktop\ENote.wav
+C:\Users\muham\OneDrive\Desktop\Evercraft Mechanic  Online Sandbox from Scrap.lnk
+C:\Users\muham\OneDrive\Desktop\flashplayer32au_ga_install.exe
+C:\Users\muham\OneDrive\Desktop\FNote.wav
+C:\Users\muham\OneDrive\Desktop\Form Tutor Meeting Timetable.docx
+C:\Users\muham\OneDrive\Desktop\GNote.wav
+C:\Users\muham\OneDrive\Desktop\HighCNote.wav
+C:\Users\muham\OneDrive\Desktop\hole.png
+C:\Users\muham\OneDrive\Desktop\horizontalwall.jpg.jpeg
+C:\Users\muham\OneDrive\Desktop\hw.docx
+C:\Users\muham\OneDrive\Desktop\Icon.jpg.jpeg
+C:\Users\muham\OneDrive\Desktop\ICT and Computing Homework comp systems.docx
+C:\Users\muham\OneDrive\Desktop\KidpreneursBook_2020Email-200507-081454.pdf
+C:\Users\muham\OneDrive\Desktop\LedControl-master.zip
+C:\Users\muham\OneDrive\Desktop\LookExtension-20181124 .aix
+C:\Users\muham\OneDrive\Desktop\Math Quiz 0.png
+C:\Users\muham\OneDrive\Desktop\Math Quiz 1.png
+C:\Users\muham\OneDrive\Desktop\Math Quiz 6.png
+C:\Users\muham\OneDrive\Desktop\Microsoft Teams.lnk
+C:\Users\muham\OneDrive\Desktop\mimles1.aia
+C:\Users\muham\OneDrive\Desktop\mimles3.aia
+C:\Users\muham\OneDrive\Desktop\MIT AI2 Companion.lnk
+C:\Users\muham\OneDrive\Desktop\MIT_App_Inventor_Tools_2.3.0_win_setup (1).exe
+C:\Users\muham\OneDrive\Desktop\MIT_App_Inventor_Tools_2.3.0_win_setup.exe
+C:\Users\muham\OneDrive\Desktop\mole.png
+C:\Users\muham\OneDrive\Desktop\Muhammad Ibrahim Mansoor Certificate.pdf
+C:\Users\muham\OneDrive\Desktop\Muhammad Photo April-2020.jpg
+C:\Users\muham\OneDrive\Desktop\OFF.png
+C:\Users\muham\OneDrive\Desktop\ON.png
+C:\Users\muham\OneDrive\Desktop\PHOTO-2020-07-19-19-33-04.jpg
+C:\Users\muham\OneDrive\Desktop\PHOTO-2020-07-19-19-33-05.jpg
+C:\Users\muham\OneDrive\Desktop\piano.png
+C:\Users\muham\OneDrive\Desktop\piano2.png
+C:\Users\muham\OneDrive\Desktop\Polytopia.lnk
+C:\Users\muham\OneDrive\Desktop\pot-of-gold.jpg.jpeg
+C:\Users\muham\OneDrive\Desktop\pot-of-gold.png
+C:\Users\muham\OneDrive\Desktop\Stick Fight  The Game.lnk
+C:\Users\muham\OneDrive\Desktop\SUP.lnk
+C:\Users\muham\OneDrive\Desktop\tk 1 (1).py
+C:\Users\muham\OneDrive\Desktop\tk 1.py
+C:\Users\muham\OneDrive\Desktop\Totally Reliable Delivery Service.lnk
+C:\Users\muham\OneDrive\Desktop\verticalwall.jpg.jpeg
+C:\Users\muham\OneDrive\Desktop\WIN_20200610_12_34_15_Pro.mp4
+C:\Users\muham\OneDrive\Desktop\Zoom.lnk
+C:\Users\muham\OneDrive\Desktop\ZoomInstaller.exe
+74 File(s) copied
+
+C:\Users\muham>OPENFILE C:\Users\muham\OneDrive\Desktop\Annotation 2020-09-03 081709.png
+'OPENFILE' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\muham>\START C:\Users\muham\OneDrive\Desktop\Annotation 2020-09-03 081709.png
+'\START' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\muham>START C:\Users\muham\OneDrive\Desktop\Annotation 2020-09-03 081709.png
+The system cannot find the file C:\Users\muham\OneDrive\Desktop\Annotation.
+
+C:\Users\muham>START C:\Users\muham\OneDrive\Desktop\Annotation 2020-09-03 081709.png
+The system cannot find the file C:\Users\muham\OneDrive\Desktop\Annotation.
+
+C:\Users\muham>START C:\Users\muham\OneDrive\Desktop\Annotation2020-09-03081709.png
+The system cannot find the file C:\Users\muham\OneDrive\Desktop\Annotation2020-09-03081709.png.
+
+C:\Users\muham>START C:\Users\muham\OneDrive\Desktop\verticalwall.jpg.jpeg
+
+C:\Users\muham>START C:\Users\muham\OneDrive\Desktop\dentistry_app_copy.apk
+
+C:\Users\muham>XCOPY C:\Users\muham\OneDrive\Desktop\LANG
+C:\Users\muham\OneDrive\Desktop\LANG\English Text Book.pdf
+C:\Users\muham\OneDrive\Desktop\LANG\The blizzard in the forest.docx
+2 File(s) copied
+
+C:\Users\muham>XCOPY C:\Users\muham\OneDrive\Desktop
+Overwrite C:\Users\muham\all-projects.zip (Yes/No/All)? N
+Overwrite C:\Users\muham\Among Us.lnk (Yes/No/All)? O
+Overwrite C:\Users\muham\Among Us.lnk (Yes/No/All)? N
+Overwrite C:\Users\muham\Annotation 2020-06-23 121126.png (Yes/No/All)? N
+Overwrite C:\Users\muham\Annotation 2020-06-23 121344.png (Yes/No/All)? N
+Overwrite C:\Users\muham\Annotation 2020-06-23 122059.png (Yes/No/All)? N
+Overwrite C:\Users\muham\Annotation 2020-06-23 122300.png (Yes/No/All)? N
+Overwrite C:\Users\muham\Annotation 2020-07-11 125815.png (Yes/No/All)? N
+Overwrite C:\Users\muham\Annotation 2020-07-11 125934.png (Yes/No/All)? N
+Overwrite C:\Users\muham\Annotation 2020-07-13 133324.png (Yes/No/All)? N
+Overwrite C:\Users\muham\Annotation 2020-09-02 081509.png (Yes/No/All)? N
+Overwrite C:\Users\muham\Annotation 2020-09-03 075624.png (Yes/No/All)? N
+Overwrite C:\Users\muham\ANote.wav (Yes/No/All)? N
+Overwrite C:\Users\muham\application.docx (Yes/No/All)? N
+Overwrite C:\Users\muham\Asphalt 8.lnk (Yes/No/All)? N
+Overwrite C:\Users\muham\background.jpg.jpeg (Yes/No/All)? N
+Overwrite C:\Users\muham\Blackmoor 2.lnk (Yes/No/All)? N
+Overwrite C:\Users\muham\BlueStacksInstaller_4.220.0.1109_native_0a6d0aef44903e594c267a3ec47b2187_QW1vbmcgVXM=.exe (Yes/No/All)? N
+Overwrite C:\Users\muham\BlueStacksInstaller_4.220.0.1109_native_58c169a1d7ee34aaa090ed7eecc14e73_QW1vbmcgVXM=.exe (Yes/No/All)? N
+Overwrite C:\Users\muham\BNote.wav (Yes/No/All)? N
+Overwrite C:\Users\muham\CNote.wav (Yes/No/All)? N
+Overwrite C:\Users\muham\com.puravidaapps.TaifunFlashlight (1).aix (Yes/No/All)? N
+Overwrite C:\Users\muham\dentistry_app (1).aia (Yes/No/All)? N
+C:\Users\muham\OneDrive\Desktop\dentistry_app.lnk
+Overwrite C:\Users\muham\dentistry_app_copy (1).apk (Yes/No/All)? N
+Overwrite C:\Users\muham\dentistry_app_copy (2).apk (Yes/No/All)? N
+Overwrite C:\Users\muham\dentistry_app_copy.apk (Yes/No/All)? N
+Overwrite C:\Users\muham\Desktop - Shortcut.lnk (Yes/No/All)? N
+Overwrite C:\Users\muham\DNote.wav (Yes/No/All)? N
+Overwrite C:\Users\muham\email draft.docx (Yes/No/All)? N
+Overwrite C:\Users\muham\ENote.wav (Yes/No/All)? N
+Overwrite C:\Users\muham\Evercraft Mechanic  Online Sandbox from Scrap.lnk (Yes/No/All)? N
+Overwrite C:\Users\muham\flashplayer32au_ga_install.exe (Yes/No/All)? N
+Overwrite C:\Users\muham\FNote.wav (Yes/No/All)? N
+Overwrite C:\Users\muham\Form Tutor Meeting Timetable.docx (Yes/No/All)? N
+Overwrite C:\Users\muham\GNote.wav (Yes/No/All)? N
+Overwrite C:\Users\muham\HighCNote.wav (Yes/No/All)? N
+Overwrite C:\Users\muham\hole.png (Yes/No/All)? N
+Overwrite C:\Users\muham\horizontalwall.jpg.jpeg (Yes/No/All)? N
+Overwrite C:\Users\muham\hw.docx (Yes/No/All)? N
+Overwrite C:\Users\muham\Icon.jpg.jpeg (Yes/No/All)? N
+Overwrite C:\Users\muham\ICT and Computing Homework comp systems.docx (Yes/No/All)? N
+Overwrite C:\Users\muham\KidpreneursBook_2020Email-200507-081454.pdf (Yes/No/All)? N
+Overwrite C:\Users\muham\LedControl-master.zip (Yes/No/All)? N
+Overwrite C:\Users\muham\LookExtension-20181124 .aix (Yes/No/All)? N
+Overwrite C:\Users\muham\Math Quiz 0.png (Yes/No/All)? N
+Overwrite C:\Users\muham\Math Quiz 1.png (Yes/No/All)? N
+Overwrite C:\Users\muham\Math Quiz 6.png (Yes/No/All)? N
+Overwrite C:\Users\muham\Microsoft Teams.lnk (Yes/No/All)? N
+Overwrite C:\Users\muham\mimles1.aia (Yes/No/All)? N
+Overwrite C:\Users\muham\mimles3.aia (Yes/No/All)? N
+Overwrite C:\Users\muham\MIT AI2 Companion.lnk (Yes/No/All)? N
+Overwrite C:\Users\muham\MIT_App_Inventor_Tools_2.3.0_win_setup (1).exe (Yes/No/All)? N
+Overwrite C:\Users\muham\MIT_App_Inventor_Tools_2.3.0_win_setup.exe (Yes/No/All)? N
+Overwrite C:\Users\muham\mole.png (Yes/No/All)? N
+Overwrite C:\Users\muham\Muhammad Ibrahim Mansoor Certificate.pdf (Yes/No/All)? N
+Overwrite C:\Users\muham\Muhammad Photo April-2020.jpg (Yes/No/All)? N
+Overwrite C:\Users\muham\OFF.png (Yes/No/All)? N
+Overwrite C:\Users\muham\ON.png (Yes/No/All)? N
+Overwrite C:\Users\muham\PHOTO-2020-07-19-19-33-04.jpg (Yes/No/All)? N
+Overwrite C:\Users\muham\PHOTO-2020-07-19-19-33-05.jpg (Yes/No/All)? N
+Overwrite C:\Users\muham\piano.png (Yes/No/All)? N
+Overwrite C:\Users\muham\piano2.png (Yes/No/All)? N
+Overwrite C:\Users\muham\Polytopia.lnk (Yes/No/All)? N
+Overwrite C:\Users\muham\pot-of-gold.jpg.jpeg (Yes/No/All)? N
+Overwrite C:\Users\muham\pot-of-gold.png (Yes/No/All)? N
+Overwrite C:\Users\muham\Stick Fight  The Game.lnk (Yes/No/All)? N
+Overwrite C:\Users\muham\SUP.lnk (Yes/No/All)? N
+C:\Users\muham\OneDrive\Desktop\TIMTABLE.png
+Overwrite C:\Users\muham\tk 1 (1).py (Yes/No/All)? N
+Overwrite C:\Users\muham\tk 1.py (Yes/No/All)? N
+Overwrite C:\Users\muham\Totally Reliable Delivery Service.lnk (Yes/No/All)? N
+Overwrite C:\Users\muham\verticalwall.jpg.jpeg (Yes/No/All)? N
+Overwrite C:\Users\muham\WIN_20200610_12_34_15_Pro.mp4 (Yes/No/All)? N
+Overwrite C:\Users\muham\Zoom.lnk (Yes/No/All)? N
+Overwrite C:\Users\muham\ZoomInstaller.exe (Yes/No/All)? N
+2 File(s) copied
+
+C:\Users\muham>START C:\Users\muham\OneDrive\Desktop\TIMTABLE.png
+
+C:\Users\muham>OPEN https://gemseducation.zoom.us/j/99496553004?pwd=TkVwZldDZTIxRnV0aDd0QnJFbWd6UT09#success
+'OPEN' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\muham>START https://gemseducation.zoom.us/j/99496553004?pwd=TkVwZldDZTIxRnV0aDd0QnJFbWd6UT09#success
+
+C:\Users\muham>START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT
+
+C:\Users\muham>IF
+The syntax of the command is incorrect.
+
+C:\Users\muham>IF 1==1: START
+
+C:\Users\muham>IF 1==1: START CMD
+
+C:\Users\muham>IF 1==1: START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT
+
+C:\Users\muham>HELP IF
+Performs conditional processing in batch programs.
+
+IF [NOT] ERRORLEVEL number command
+IF [NOT] string1==string2 command
+IF [NOT] EXIST filename command
+
+  NOT               Specifies that Windows should carry out
+                    the command only if the condition is false.
+
+  ERRORLEVEL number Specifies a true condition if the last program run
+                    returned an exit code equal to or greater than the number
+                    specified.
+
+  string1==string2  Specifies a true condition if the specified text strings
+                    match.
+
+  EXIST filename    Specifies a true condition if the specified filename
+                    exists.
+
+  command           Specifies the command to carry out if the condition is
+                    met.  Command can be followed by ELSE command which
+                    will execute the command after the ELSE keyword if the
+                    specified condition is FALSE
+
+The ELSE clause must occur on the same line as the command after the IF.  For
+example:
+
+    IF EXIST filename. (
+        del filename.
+    ) ELSE (
+        echo filename. missing.
+    )
+
+The following would NOT work because the del command needs to be terminated
+by a newline:
+
+    IF EXIST filename. del filename. ELSE echo filename. missing
+
+Nor would the following work, since the ELSE command must be on the same line
+as the end of the IF command:
+
+    IF EXIST filename. del filename.
+    ELSE echo filename. missing
+
+The following would work if you want it all on one line:
+
+    IF EXIST filename. (del filename.) ELSE echo filename. missing
+
+If Command Extensions are enabled IF changes as follows:
+
+    IF [/I] string1 compare-op string2 command
+    IF CMDEXTVERSION number command
+    IF DEFINED variable command
+
+where compare-op may be one of:
+
+    EQU - equal
+    NEQ - not equal
+    LSS - less than
+    LEQ - less than or equal
+    GTR - greater than
+    GEQ - greater than or equal
+
+and the /I switch, if specified, says to do case insensitive string
+compares.  The /I switch can also be used on the string1==string2 form
+of IF.  These comparisons are generic, in that if both string1 and
+string2 are both comprised of all numeric digits, then the strings are
+converted to numbers and a numeric comparison is performed.
+
+The CMDEXTVERSION conditional works just like ERRORLEVEL, except it is
+comparing against an internal version number associated with the Command
+Extensions.  The first version is 1.  It will be incremented by one when
+significant enhancements are added to the Command Extensions.
+CMDEXTVERSION conditional is never true when Command Extensions are
+disabled.
+
+The DEFINED conditional works just like EXIST except it takes an
+environment variable name and returns true if the environment variable
+is defined.
+
+%ERRORLEVEL% will expand into a string representation of
+the current value of ERRORLEVEL, provided that there is not already
+an environment variable with the name ERRORLEVEL, in which case you
+will get its value instead.  After running a program, the following
+illustrates ERRORLEVEL use:
+
+    goto answer%ERRORLEVEL%
+    :answer0
+    echo Program had return code 0
+    :answer1
+    echo Program had return code 1
+
+You can also use numerical comparisons above:
+
+    IF %ERRORLEVEL% LEQ 1 goto okay
+
+%CMDCMDLINE% will expand into the original command line passed to
+CMD.EXE prior to any processing by CMD.EXE, provided that there is not
+already an environment variable with the name CMDCMDLINE, in which case
+you will get its value instead.
+
+%CMDEXTVERSION% will expand into a string representation of the
+current value of CMDEXTVERSION, provided that there is not already
+an environment variable with the name CMDEXTVERSION, in which case you
+will get its value instead.
+
+C:\Users\muham>IF "1"=="1": START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT
+
+C:\Users\muham>IF "1"=="1" (START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT)
+
+C:\Users\muham>"1"=="1": START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT^ZIF "1"=="1" (START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT)
+'"1"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\muham>IF "1"=="1" (START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT)
+
+C:\Users\muham>IF "1"=="1" (START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT)
+
+C:\Users\muham>IF "1"=="1" (START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT)
+
+C:\Users\muham>IF "1"=="1" (START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT)
+
+C:\Users\muham>IF "1"=="1" (START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT)ELSE;
+The syntax of the command is incorrect.
+
+C:\Users\muham>IF "1"=="1" (START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT)ELSE(START CMD)
+ELSE(START was unexpected at this time.
+
+C:\Users\muham>IF "1"=="1" (START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT)ELSE (START)
+
+C:\Users\muham>IF "1"=="2" (START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT)ELSE (START)
+
+C:\Users\muham>HELP VARIABLE
+This command is not supported by the help utility.  Try "VARIABLE /?".
+
+C:\Users\muham>VARIABLE/?
+'VARIABLE' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\muham>A=1
+'A' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\muham>\A=1
+'\A' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\muham>INPUT
+'INPUT' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\muham>HELP INPUT
+This command is not supported by the help utility.  Try "INPUT /?".
+
+C:\Users\muham>INPUT /?
+'INPUT' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\muham>IF "1"EQU"2" (START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT)ELSE (START)
+(START was unexpected at this time.
+
+C:\Users\muham>IF "1"EQU"2" (START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT)ELSE (START)
+(START was unexpected at this time.
+
+C:\Users\muham>IF "1"EQU"2" (START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT)ELSE (START)IF "1"=="2" (START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT)ELSE (START)
+(START was unexpected at this time.
+
+C:\Users\muham>IF "1"=="2" (START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT)ELSE (START)
+
+C:\Users\muham>IF "1"GTR"2" (START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT)ELSE (START)
+(START was unexpected at this time.
+
+C:\Users\muham>IF "1"=="2" (START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT.)ELSE (START.)
+
+C:\Users\muham>IF "1"=="2" (START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT.)ELSE (START.)
+
+C:\Users\muham>IF "1"=="2" (START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT.)ELSE (START)
+
+C:\Users\muham>
+C:\Users\muham>IF "1"=="1" (START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT)ELSE (START)
+
+C:\Users\muham>IF "1"EQU"1" (START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT)ELSE (START)
+(START was unexpected at this time.
+
+C:\Users\muham>IF "1" EQU "1" (START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT)ELSE (START)
+
+C:\Users\muham>IF "1" EQU "2" (START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT)ELSE (START)
+
+C:\Users\muham>IF "1" GTR "2" (START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT)ELSE (START)
+
+C:\Users\muham>IF "1" GTR "2" (START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT)ELSE (START)
+
+C:\Users\muham>XCOPY C:
+C:all-projects.zip
+File cannot be copied onto itself
+0 File(s) copied
+
+C:\Users\muham>XCOPY C:\USERS\MUHAM\DESKTOP
+File not found - DESKTOP
+0 File(s) copied
+
+C:\Users\muham>XCOPY C:\USERS\MUHAM\ONEDRIVE\DESKTOP
+Overwrite C:\Users\muham\all-projects.zip (Yes/No/All)? N
+Overwrite C:\Users\muham\Among Us.lnk (Yes/No/All)? N
+Overwrite C:\Users\muham\Annotation 2020-06-23 121126.png (Yes/No/All)? N
+Overwrite C:\Users\muham\Annotation 2020-06-23 121344.png (Yes/No/All)? N
+Overwrite C:\Users\muham\Annotation 2020-06-23 122059.png (Yes/No/All)? N
+Overwrite C:\Users\muham\Annotation 2020-06-23 122300.png (Yes/No/All)? N
+Overwrite C:\Users\muham\Annotation 2020-07-11 125815.png (Yes/No/All)? N
+Overwrite C:\Users\muham\Annotation 2020-07-11 125934.png (Yes/No/All)? N
+Overwrite C:\Users\muham\Annotation 2020-07-13 133324.png (Yes/No/All)? N
+Overwrite C:\Users\muham\Annotation 2020-09-02 081509.png (Yes/No/All)? N
+Overwrite C:\Users\muham\Annotation 2020-09-03 075624.png (Yes/No/All)? N
+Overwrite C:\Users\muham\ANote.wav (Yes/No/All)? N
+Overwrite C:\Users\muham\application.docx (Yes/No/All)? N
+Overwrite C:\Users\muham\Asphalt 8.lnk (Yes/No/All)? N
+Overwrite C:\Users\muham\background.jpg.jpeg (Yes/No/All)? N
+Overwrite C:\Users\muham\Blackmoor 2.lnk (Yes/No/All)? N
+Overwrite C:\Users\muham\BlueStacksInstaller_4.220.0.1109_native_0a6d0aef44903e594c267a3ec47b2187_QW1vbmcgVXM=.exe (Yes/No/All)? N
+Overwrite C:\Users\muham\BlueStacksInstaller_4.220.0.1109_native_58c169a1d7ee34aaa090ed7eecc14e73_QW1vbmcgVXM=.exe (Yes/No/All)? N
+Overwrite C:\Users\muham\BNote.wav (Yes/No/All)? N
+Overwrite C:\Users\muham\CNote.wav (Yes/No/All)? N
+Overwrite C:\Users\muham\com.puravidaapps.TaifunFlashlight (1).aix (Yes/No/All)? N
+Overwrite C:\Users\muham\dentistry_app (1).aia (Yes/No/All)? N
+Overwrite C:\Users\muham\dentistry_app.lnk (Yes/No/All)? N
+Overwrite C:\Users\muham\dentistry_app_copy (1).apk (Yes/No/All)? N
+Overwrite C:\Users\muham\dentistry_app_copy (2).apk (Yes/No/All)? N
+Overwrite C:\Users\muham\dentistry_app_copy.apk (Yes/No/All)? N
+Overwrite C:\Users\muham\Desktop - Shortcut.lnk (Yes/No/All)? N
+Overwrite C:\Users\muham\DNote.wav (Yes/No/All)? N
+Overwrite C:\Users\muham\email draft.docx (Yes/No/All)? N
+Overwrite C:\Users\muham\ENote.wav (Yes/No/All)? N
+Overwrite C:\Users\muham\Evercraft Mechanic  Online Sandbox from Scrap.lnk (Yes/No/All)? N
+Overwrite C:\Users\muham\flashplayer32au_ga_install.exe (Yes/No/All)? N
+Overwrite C:\Users\muham\FNote.wav (Yes/No/All)? N
+Overwrite C:\Users\muham\Form Tutor Meeting Timetable.docx (Yes/No/All)? N
+Overwrite C:\Users\muham\GNote.wav (Yes/No/All)? N
+Overwrite C:\Users\muham\HighCNote.wav (Yes/No/All)? N
+Overwrite C:\Users\muham\hole.png (Yes/No/All)? N
+Overwrite C:\Users\muham\horizontalwall.jpg.jpeg (Yes/No/All)? N
+Overwrite C:\Users\muham\hw.docx (Yes/No/All)? N
+Overwrite C:\Users\muham\Icon.jpg.jpeg (Yes/No/All)? N
+Overwrite C:\Users\muham\ICT and Computing Homework comp systems.docx (Yes/No/All)? N
+Overwrite C:\Users\muham\KidpreneursBook_2020Email-200507-081454.pdf (Yes/No/All)? N
+Overwrite C:\Users\muham\LedControl-master.zip (Yes/No/All)? N
+Overwrite C:\Users\muham\LookExtension-20181124 .aix (Yes/No/All)? N
+Overwrite C:\Users\muham\Math Quiz 0.png (Yes/No/All)? N
+Overwrite C:\Users\muham\Math Quiz 1.png (Yes/No/All)? N
+Overwrite C:\Users\muham\Math Quiz 6.png (Yes/No/All)? N
+Overwrite C:\Users\muham\Microsoft Teams.lnk (Yes/No/All)? N
+Overwrite C:\Users\muham\mimles1.aia (Yes/No/All)? N
+Overwrite C:\Users\muham\mimles3.aia (Yes/No/All)? N
+Overwrite C:\Users\muham\MIT AI2 Companion.lnk (Yes/No/All)? N
+Overwrite C:\Users\muham\MIT_App_Inventor_Tools_2.3.0_win_setup (1).exe (Yes/No/All)? N
+Overwrite C:\Users\muham\MIT_App_Inventor_Tools_2.3.0_win_setup.exe (Yes/No/All)? N
+Overwrite C:\Users\muham\mole.png (Yes/No/All)? N
+Overwrite C:\Users\muham\Muhammad Ibrahim Mansoor Certificate.pdf (Yes/No/All)? N
+Overwrite C:\Users\muham\Muhammad Photo April-2020.jpg (Yes/No/All)? N
+Overwrite C:\Users\muham\OFF.png (Yes/No/All)? N
+Overwrite C:\Users\muham\ON.png (Yes/No/All)? N
+Overwrite C:\Users\muham\PHOTO-2020-07-19-19-33-04.jpg (Yes/No/All)? N
+Overwrite C:\Users\muham\PHOTO-2020-07-19-19-33-05.jpg (Yes/No/All)? N
+Overwrite C:\Users\muham\piano.png (Yes/No/All)? N
+Overwrite C:\Users\muham\piano2.png (Yes/No/All)? N
+Overwrite C:\Users\muham\Polytopia.lnk (Yes/No/All)? N
+Overwrite C:\Users\muham\pot-of-gold.jpg.jpeg (Yes/No/All)? N
+Overwrite C:\Users\muham\pot-of-gold.png (Yes/No/All)? N
+Overwrite C:\Users\muham\Stick Fight  The Game.lnk (Yes/No/All)? N
+Overwrite C:\Users\muham\SUP.lnk (Yes/No/All)? N
+Overwrite C:\Users\muham\TIMTABLE.png (Yes/No/All)? N
+Overwrite C:\Users\muham\tk 1 (1).py (Yes/No/All)? N
+Overwrite C:\Users\muham\tk 1.py (Yes/No/All)? N
+Overwrite C:\Users\muham\Totally Reliable Delivery Service.lnk (Yes/No/All)? N
+Overwrite C:\Users\muham\verticalwall.jpg.jpeg (Yes/No/All)? N
+Overwrite C:\Users\muham\WIN_20200610_12_34_15_Pro.mp4 (Yes/No/All)? N
+Overwrite C:\Users\muham\Zoom.lnk (Yes/No/All)? N
+Overwrite C:\Users\muham\ZoomInstaller.exe (Yes/No/All)? N
+0 File(s) copied
+
+C:\Users\muham>XCOPY C:\Users\muham\OneDrive\Desktop\python
+C:\Users\muham\OneDrive\Desktop\python\bar drwer.py
+C:\Users\muham\OneDrive\Desktop\python\chk.py
+C:\Users\muham\OneDrive\Desktop\python\drwer.py
+C:\Users\muham\OneDrive\Desktop\python\events.txt
+C:\Users\muham\OneDrive\Desktop\python\hangman.py
+C:\Users\muham\OneDrive\Desktop\python\pi rad.py
+C:\Users\muham\OneDrive\Desktop\python\pie drwer.py
+C:\Users\muham\OneDrive\Desktop\python\questions.txt
+C:\Users\muham\OneDrive\Desktop\python\THE QUICK QUIZ.py
+Overwrite C:\Users\muham\tk 1.py (Yes/No/All)? N
+C:\Users\muham\OneDrive\Desktop\python\tk2.py
+C:\Users\muham\OneDrive\Desktop\python\ultimite quiz1.py
+11 File(s) copied
+
+C:\Users\muham>IF "1" GTR "2" (START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT)ELSE (START C:\Users\muham\OneDrive\Desktop\python\tk2.py)
+
+C:\Users\muham>@echo off
+echo Write something, it will be used in the command "echo"
+Write something, it will be used in the command "echo"
+set /p input=""
+cls
+echo %input%...
+cls...
+qld
+'qld' is not recognized as an internal or external command,
+operable program or batch file.
+
+
+
+
+
+wldsdlwd;.l
+'wldsdlwd' is not recognized as an internal or external command,
+operable program or batch file.
+start
+C:\Users\muham>
+The syntax of the command is incorrect.
+C:
+/C:
+The filename, directory name, or volume label syntax is incorrect.
+\C:
+The filename, directory name, or volume label syntax is incorrect.
+XCOPY C:\Users\muham\OneDrive\Desktop\python
+Overwrite C:\Users\muham\bar drwer.py (Yes/No/All)? n
+Overwrite C:\Users\muham\chk.py (Yes/No/All)? n
+Overwrite C:\Users\muham\drwer.py (Yes/No/All)? n
+Overwrite C:\Users\muham\events.txt (Yes/No/All)? n
+Overwrite C:\Users\muham\hangman.py (Yes/No/All)? n
+Overwrite C:\Users\muham\pi rad.py (Yes/No/All)? n
+Overwrite C:\Users\muham\pie drwer.py (Yes/No/All)? n
+Overwrite C:\Users\muham\questions.txt (Yes/No/All)? n
+Overwrite C:\Users\muham\THE QUICK QUIZ.py (Yes/No/All)? n
+Overwrite C:\Users\muham\tk 1.py (Yes/No/All)? n
+Overwrite C:\Users\muham\tk2.py (Yes/No/All)? n
+Overwrite C:\Users\muham\ultimite quiz1.py (Yes/No/All)? n
+0 File(s) copied
+start
+Microsoft Windows [Version 10.0.18363.1016]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\muham>color02
+'color02' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\muham>color 02
+
+C:\Users\muham>010010001
+'010010001' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\muham>BINARY 01001
+'BINARY' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\muham>SET /P INPUT=""
+11
+
+C:\Users\muham>SHOW P
+'SHOW' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\muham>IF "1" GTR "P" (START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT)ELSE (START C:\Users\muham\OneDrive\Desktop\python\tk2.py)
+
+C:\Users\muham>IF "1" GTR P (START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT)ELSE (START C:\Users\muham\OneDrive\Desktop\python\tk2.py)
+
+C:\Users\muham>IF P GTR "1" (START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT)ELSE (START C:\Users\muham\OneDrive\Desktop\python\tk2.py)
+
+C:\Users\muham>SET /A INPUT="NUMBER:"
+0
+C:\Users\muham>SET /A INPUT=""
+Missing operand.
+
+C:\Users\muham>SET /P D="NUMBER:"
+NUMBER:0
+
+C:\Users\muham>IF D GTR "1" (START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT)ELSE (START C:\Users\muham\OneDrive\Desktop\python\tk2.py)
+
+C:\Users\muham>IF "1" GTR D (START https://gems.phoenixclassroom.com/SCHOOLINFO/CHAT/CHAT)ELSE (START C:\Users\muham\OneDrive\Desktop\python\tk2.py)
+
+C:\Users\muham>

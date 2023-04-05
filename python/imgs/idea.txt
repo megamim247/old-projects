@@ -1,0 +1,1 @@
+at start of main add recive msg?
