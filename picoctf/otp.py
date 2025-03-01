@@ -5,10 +5,19 @@ KEY_FILE = "key"
 KEY_LEN = 50000
 FLAG_FILE = "flag"
 
-
+def list2(original):
+    new=[]
+    original=list(original)
+    x=""
+    for n in range(0,len(original),2):
+        x=""
+        x+=original[n]
+        x+=original[n+1]
+        new.append(x)
+    return new
 def startup(key_location):
-	flag = open(FLAG_FILE).read()
-	kf = open(KEY_FILE, "rb").read()
+	flag = "11111111111111111111111111111111"
+	kf = "6c480756506c4855086c485351056c4853566c4856096c4809516c4808046c48"
 
 	start = key_location
 	stop = key_location + len(flag)
@@ -16,7 +25,7 @@ def startup(key_location):
 	key = kf[start:stop]
 	key_location = stop
 
-	result = list(map(lambda p, k: "{:02x}".format(ord(p) ^ k), flag, key))
+	result = list(map(lambda p, k: "{:02x}".format(ord(p) ^ int(k)), flag, list2(key)))
 	print("This is the encrypted flag!\n{}\n".format("".join(result)))
 
 	return key_location
