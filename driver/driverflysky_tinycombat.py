@@ -1,9 +1,11 @@
 import pygame
 import vgamepad
-import os
-os.environ['SDL_JOYSTICK_ALLOW_BACKGROUND_EVENTS'] = '1'
-pygame.init()
+from os import environ
+from time import sleep
+environ['SDL_JOYSTICK_ALLOW_BACKGROUND_EVENTS'] = '1'
 gamepad = vgamepad.VX360Gamepad()
+sleep(3)
+pygame.init()
 SDL_JOYSTICK_ALLOW_BACKGROUND_EVENTS=1
 # This is a simple class that will help us print to the screen.
 # It has nothing to do with the joysticks, just outputting the
@@ -11,7 +13,7 @@ SDL_JOYSTICK_ALLOW_BACKGROUND_EVENTS=1
 class TextPrint:
     def __init__(self):
         self.reset()
-        self.font = pygame.font.Font(None, 25)
+        self.font = pygame.font.Font(None, 15)
 
     def tprint(self, screen, text):
         text_bitmap = self.font.render(text, True, (0, 0, 0))
@@ -21,7 +23,7 @@ class TextPrint:
     def reset(self):
         self.x = 10
         self.y = 10
-        self.line_height = 15
+        self.line_height = 10
 
     def indent(self):
         self.x += 10
@@ -102,27 +104,26 @@ def main():
             # Get the name from the OS for the controller/joystick.
             name = joystick.get_name()
             text_print.tprint(screen, f"Joystick name: {name}")
+            
+            guid = joystick.get_guid()
+            text_print.tprint(screen, f"GUID: {guid}")
+
+            power_level = joystick.get_power_level()
+            text_print.tprint(screen, f"Joystick's power level: {power_level}")
             if name=="Flysky FS-i6XCN":
-
-                guid = joystick.get_guid()
-                text_print.tprint(screen, f"GUID: {guid}")
-
-                power_level = joystick.get_power_level()
-                text_print.tprint(screen, f"Joystick's power level: {power_level}")
-
                 # Usually axis run in pairs, up/down for one, and left/right for
                 # the other. Triggers count as axes.
                 axes = joystick.get_numaxes()
                 text_print.tprint(screen, f"Number of axes: {axes}")
                 text_print.indent()
-                axiss=[0 for i in range(0,5)]
+                axiss=[0 for i in range(0,6)]
                 
-                for i in range(0,5):
+                for i in range(0,6):
                     axis = joystick.get_axis(i)
                     axiss[i]=axis
                     text_print.tprint(screen, f"Axis {i} value: {axis:>6.3f}")
                     
-                gamepad.left_trigger_float((2-(axiss[5]+1))*0.5)
+                gamepad.right_trigger_float((2-(axiss[5]+1))*0.5)
                 gamepad.left_trigger_float((2-(axiss[4]+1))*0.5)
                 gamepad.right_joystick_float(axiss[0],axiss[1])
                 gamepad.left_joystick_float(axiss[3],(axiss[2]+1)*0.5)
@@ -166,13 +167,14 @@ def main():
                 for i in range(hats):
                     hat = joystick.get_hat(i)
                     text_print.tprint(screen, f"Hat {i} value: {str(hat)}")
-                text_print.unindent()
+                
 
-                text_print.unindent()
-
+            text_print.unindent()
+        text_print.unindent()
+        text_print.reset()
         # Go ahead and update the screen with what we've drawn.
         pygame.display.flip()
-
+        
         # Limit to 30 frames per second.
         gamepad.update()
         clock.tick(20)
