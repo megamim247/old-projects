@@ -1,38 +1,56 @@
-#DECLARE ReadFile : PROCEDURE
 def ReadFile():
+    #DECLARE ReadData : STRING
+    #DECLARE count : INTEGER
     global DataArray
     try:
-        #DECLARE Count : INTEGER
-        #DECLARE Line : STRING
-        file=open("IntegerData.txt")
-        Count=0
-        for Line in file:
-            DataArray[Count]=int(Line.strip())
-            Count+=1
-    except IOError:
-        print("file not real")
+        file=open("IntegerData.txt","r")
+        ReadData=file.readline().strip()
 
-#DECLARE FindValues : FUNCTION
+        count=0
+        while ReadData!="":
+            DataArray[count]=int(ReadData)
+            ReadData=file.readline().strip()
+            count+=1
+        file.close()
+    except IOError:
+        print("file is not real")
+
 def FindValues():
-    global DataArray
-    #DECLARE SearchValue,index,count : INTEGER
-    SearchValue=0
-    while SearchValue>100 or SearchValue<1:
-        SearchValue=int(input("enter value to search (whole number between 1 and 100)"))
+    #DECLARE SearchValue : INTEGER
+    #DECLARE count : INTEGER
     count=0
-    for index in range(0,100):
-        if DataArray[index]==SearchValue:
+    global DataArray
+    SearchValue=int(input("enter search value:"))
+    while SearchValue>100 or SearchValue<0:
+        SearchValue=int(input("enter search value:"))
+    for n in DataArray:
+        if n==SearchValue:
             count+=1
     return count
 
 def BubbleSort():
+    #DECLARE Swap : BOOLEAN
+    #DECLARE temp : integer
     global DataArray
+    swap="True"
+    length=len(DataArray)
+    while swap:
+        for n in range(0,length):
+            if DataArray[n]>DataArray[n+1]:
+                temp=DataArray[n]
+                DataArray[n]=DataArray[n+1]
+                DataArray[n+1]=temp
+        length-=1
+
+    for n in DataArray:
+        print(n,end=",")
 
 #MAIN
+#DECLARE DataArray : Array[1:100] of INTEGER GLOBAL
 global DataArray
-#DECALRE DataArray : ARRAY(0,99) of INTEGER
 DataArray=[0 for n in range(0,100)]
+
 ReadFile()
-print("the value occurs",FindValues(),"number of times")
+print("the value occurs ",FindValues()," times")
 
 

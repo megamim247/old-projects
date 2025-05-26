@@ -1,42 +1,42 @@
-global Array,FreePointer,StartPointer
+global Array,StartPointer,FreePointer
+Array=[[-1,-1] for n in range(0,10)]
 Array=[[-1,n+1] for n in range(0,10)]
 Array[9][1]=-1
-FreePointer=0
 StartPointer=-1
+FreePointer=1
+
 
 def Add(data:int):
-    global Array,FreePointer,StartPointer
+    global Array,StartPointer,FreePointer    
     if StartPointer==-1:
         StartPointer=0
         Array[0][0]=data
         Array[0][1]=-1
-        FreePointer=1
-
+        
     else:
         currentPointer=FreePointer
-        FreePointer=Array[FreePointer][1]
         Array[currentPointer][0]=data
-        Array[currentPointer][1]=-1
+        FreePointer=Array[FreePointer][1]
         previousPointer=StartPointer
         previouspreviousPointer=-1
-        while (Array[previousPointer][0]<data and previousPointer!=-1):
+        while (previousPointer!=-1 and Array[previousPointer][0]<data):
             previouspreviousPointer=previousPointer
             previousPointer=Array[previousPointer][1]
-        
-        if previouspreviousPointer!=-1:
-            Array[previouspreviousPointer][1]=currentPointer
-            Array[currentPointer][1]=previousPointer
-        else:
+        if previouspreviousPointer==-1:
             Array[currentPointer][1]=StartPointer
             StartPointer=currentPointer
-
+        else:
+            Array[previouspreviousPointer][1]=currentPointer
+            Array[currentPointer][1]=previousPointer
+            
 Add(5)
+print(Array)
 Add(4)
-Add(6)
+print(Array)
 Add(9)
+print(Array)
 Add(7)
-Add(8)
-Add(10)
+print(Array)
+Add(1)
 print(Array)
 print(StartPointer)
-            

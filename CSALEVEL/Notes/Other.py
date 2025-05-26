@@ -17,4 +17,3 @@ class CLASS:
         self.__students=Pstudents
 
 #READING FROM FILE
-#ONLY USE FOR LOOP PLS PLS PLS
