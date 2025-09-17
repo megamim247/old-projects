@@ -1,9 +1,11 @@
 import pygame
 import vgamepad
 import os
+import time
 os.environ['SDL_JOYSTICK_ALLOW_BACKGROUND_EVENTS'] = '1'
-pygame.init()
 gamepad = vgamepad.VX360Gamepad()
+time.sleep(3)
+pygame.init()
 SDL_JOYSTICK_ALLOW_BACKGROUND_EVENTS=1
 # This is a simple class that will help us print to the screen.
 # It has nothing to do with the joysticks, just outputting the
@@ -45,9 +47,6 @@ def main():
     # pygame.JOYDEVICEADDED event for every joystick connected
     # at the start of the program.
     joysticks = {}
-    prevaxis=[0 for i in range(0,4)]
-    prevprevaxis=[0 for i in range(0,4)]
-    prevprevprevaxis=[0 for i in range(0,4)]
     done = False
     while not done:
         # Event processing step.
@@ -115,16 +114,17 @@ def main():
                 axes = joystick.get_numaxes()
                 text_print.tprint(screen, f"Number of axes: {axes}")
                 text_print.indent()
-                axiss=[0 for i in range(0,5)]
+                axiss=[0 for i in range(0,6)]
                 
-                for i in range(0,5):
+                for i in range(0,6):
                     axis = joystick.get_axis(i)
                     axiss[i]=axis
                     text_print.tprint(screen, f"Axis {i} value: {axis:>6.3f}")
                     
-                gamepad.left_trigger_float((axiss[4]+1)*0.5)
+                gamepad.right_trigger_float((axiss[4]+1)*0.5)
+                gamepad.left_trigger_float((axiss[5]+1)*0.5)
                 gamepad.right_joystick_float(axiss[0],axiss[1])
-                gamepad.left_joystick_float(axiss[3],axiss[2])
+                gamepad.left_joystick_float(axiss[3],(axiss[2]+1)*0.5)
                 
 
                 buttons = joystick.get_numbuttons()

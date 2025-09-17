@@ -1,0 +1,36 @@
+from turtle import *
+r = 0
+i = -10
+t1 = Turtle()
+t2 = Turtle()
+t3 = Turtle()
+t4 = Turtle()
+t5 = Turtle()
+t1.hideturtle()
+t2.hideturtle()
+t3.hideturtle()
+t4.hideturtle()
+t5.hideturtle()
+t1.speed(0)
+t2.speed(0)
+t3.speed(0)
+t4.speed(0)
+t5.speed(0)
+t1.color("red")
+t2.color("orange")
+t3.color("green")
+t4.color("blue")
+t5.color("purple")
+while True:
+    t1.forward(0.5+i)
+    t1.right(r+1+i)
+    t2.forward(1.0+i)
+    t2.right(r+2+i)
+    t3.forward(1.5+i)
+    t3.right(r+3+i)
+    t4.forward(2.0+i)
+    t4.right(r+4+i)
+    t5.forward(2.5+i)
+    t5.right(r+5+i)
+    r=r+1
+    i=i+1

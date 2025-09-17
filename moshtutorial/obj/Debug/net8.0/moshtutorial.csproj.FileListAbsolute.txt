@@ -1,0 +1,15 @@
+C:\Gits\Programming\moshtutorial\bin\Debug\net8.0\moshtutorial.exe
+C:\Gits\Programming\moshtutorial\bin\Debug\net8.0\moshtutorial.deps.json
+C:\Gits\Programming\moshtutorial\bin\Debug\net8.0\moshtutorial.runtimeconfig.json
+C:\Gits\Programming\moshtutorial\bin\Debug\net8.0\moshtutorial.dll
+C:\Gits\Programming\moshtutorial\bin\Debug\net8.0\moshtutorial.pdb
+C:\Gits\Programming\moshtutorial\obj\Debug\net8.0\moshtutorial.GeneratedMSBuildEditorConfig.editorconfig
+C:\Gits\Programming\moshtutorial\obj\Debug\net8.0\moshtutorial.AssemblyInfoInputs.cache
+C:\Gits\Programming\moshtutorial\obj\Debug\net8.0\moshtutorial.AssemblyInfo.cs
+C:\Gits\Programming\moshtutorial\obj\Debug\net8.0\moshtutorial.csproj.CoreCompileInputs.cache
+C:\Gits\Programming\moshtutorial\obj\Debug\net8.0\moshtutorial.sourcelink.json
+C:\Gits\Programming\moshtutorial\obj\Debug\net8.0\moshtutorial.dll
+C:\Gits\Programming\moshtutorial\obj\Debug\net8.0\refint\moshtutorial.dll
+C:\Gits\Programming\moshtutorial\obj\Debug\net8.0\moshtutorial.pdb
+C:\Gits\Programming\moshtutorial\obj\Debug\net8.0\moshtutorial.genruntimeconfig.cache
+C:\Gits\Programming\moshtutorial\obj\Debug\net8.0\ref\moshtutorial.dll

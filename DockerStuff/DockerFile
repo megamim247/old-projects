@@ -1,0 +1,4 @@
+FROM alpine:latest
+RUN apk add java17-jre
+WORKDIR /data
+RUN java -jar /data/fabric-server-launch.jar
