@@ -1,37 +1,39 @@
 {
-    "configurations": [
-        {
-            "name": "Win32",
-            "includePath": [
-                "c:/Gits/Programming/**"
-            ],
-            "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
-            ],
-            "compilerPath": "gcc.exe",
-            "intelliSenseMode": "windows-msvc-x64",
-            "compilerPathInCppPropertiesJson": "C:/MinGW/bin/gcc.exe",
-            "mergeConfigurations": false,
-            "recursiveIncludes": {},
-            "browse": {
-                "limitSymbolsToIncludedHeaders": true
-            }
-        },
-        {
-            "name": "niggaballs",
-            "includePath": [
-                "${workspaceFolder}/**"
-            ],
-            "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
-            ],
-            "compilerPath": "cl.exe",
-            "intelliSenseMode": "windows-msvc-x64"
-        }
-    ],
-    "version": 4
+  "configurations": [
+    {
+      "name": "windows-gcc-x64",
+      "includePath": [
+        "${workspaceFolder}/**"
+      ],
+      "defines": [
+        "_DEBUG",
+        "UNICODE",
+        "_UNICODE"
+      ],
+      "compilerPath": "C:/msys64/mingw64/bin/gcc.exe",
+      "intelliSenseMode": "windows-gcc-x64",
+      "compilerPathInCppPropertiesJson": "C:/MinGW/bin/gcc.exe",
+      "mergeConfigurations": false,
+      "recursiveIncludes": {},
+      "browse": {
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "cStandard": "${default}",
+      "cppStandard": "${default}"
+    },
+    {
+      "name": "niggaballs",
+      "includePath": [
+        "${workspaceFolder}/**"
+      ],
+      "defines": [
+        "_DEBUG",
+        "UNICODE",
+        "_UNICODE"
+      ],
+      "compilerPath": "cl.exe",
+      "intelliSenseMode": "windows-msvc-x64"
+    }
+  ],
+  "version": 4
 }

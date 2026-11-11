@@ -1,13 +1,17 @@
 // SPDX-License-Identifier: LGPL-3.0-or-later
-// Copyright 2016-2025 Hristo Gochkov, Mathieu Carbou, Emil Muratov
+// Copyright 2016-2026 Hristo Gochkov, Mathieu Carbou, Emil Muratov, Will Miles
 
-#ifndef ASYNCWEBSOCKET_H_
-#define ASYNCWEBSOCKET_H_
+#pragma once
 
 #include <Arduino.h>
 
-#if defined(ESP32) || defined(LIBRETINY)
+#if defined(ESP32) || defined(LIBRETINY) || defined(HOST)
 #include <AsyncTCP.h>
+#ifdef LIBRETINY
+#ifdef round
+#undef round
+#endif
+#endif
 #include <mutex>
 #ifndef WS_MAX_QUEUED_MESSAGES
 #define WS_MAX_QUEUED_MESSAGES 32
@@ -25,10 +29,14 @@
 #endif
 
 #include <ESPAsyncWebServer.h>
+#include <AsyncWebServerLogging.h>
 
+#include <cstdio>
+#include <deque>
+#include <list>
 #include <memory>
 
-#ifdef ESP8266
+#if defined(ESP8266) || defined(TARGET_RP2040) || defined(TARGET_RP2350) || defined(PICO_RP2040) || defined(PICO_RP2350)
 #include <Hash.h>
 #ifdef CRYPTO_HASH_h  // include Hash.h from espressif framework if the first include was from the crypto library
 #include <../src/Hash.h>
@@ -36,7 +44,7 @@
 #endif
 
 #ifndef DEFAULT_MAX_WS_CLIENTS
-#ifdef ESP32
+#if defined(ESP32) || defined(HOST)
 #define DEFAULT_MAX_WS_CLIENTS 8
 #else
 #define DEFAULT_MAX_WS_CLIENTS 4
@@ -48,7 +56,6 @@ using AsyncWebSocketSharedBuffer = std::shared_ptr<std::vector<uint8_t>>;
 class AsyncWebSocket;
 class AsyncWebSocketResponse;
 class AsyncWebSocketClient;
-class AsyncWebSocketControl;
 
 typedef struct {
   /** Message type as defined by enum AwsFrameType.
@@ -88,11 +95,6 @@ typedef enum {
   WS_PONG
 } AwsFrameType;
 typedef enum {
-  WS_MSG_SENDING,
-  WS_MSG_SENT,
-  WS_MSG_ERROR
-} AwsMessageStatus;
-typedef enum {
   WS_EVT_CONNECT,
   WS_EVT_DISCONNECT,
   WS_EVT_PING,
@@ -122,28 +124,35 @@ public:
   }
 };
 
+// Pure payload holder -- no send-progress state. Lives only in
+// AsyncWebSocketClient's _controlQueue/_messageQueue; all in-flight frame
+// tracking lives on the client, since only one frame may be outstanding
+// (added to TCP but not yet acked) across both queues at a time.
 class AsyncWebSocketMessage {
 private:
   AsyncWebSocketSharedBuffer _WSbuffer;
   uint8_t _opcode{WS_TEXT};
   bool _mask{false};
-  AwsMessageStatus _status{WS_MSG_ERROR};
-  size_t _sent{};
-  size_t _ack{};
-  size_t _acked{};
 
 public:
-  AsyncWebSocketMessage(AsyncWebSocketSharedBuffer buffer, uint8_t opcode = WS_TEXT, bool mask = false);
+  AsyncWebSocketMessage(AsyncWebSocketSharedBuffer buffer, uint8_t opcode = WS_TEXT, bool mask = false)
+    : _WSbuffer{buffer}, _opcode(opcode & 0x0F), _mask{mask} {}
 
-  bool finished() const {
-    return _status != WS_MSG_SENDING;
+  bool isControl() const {
+    return _opcode >= WS_DISCONNECT;
   }
-  bool betweenFrames() const {
-    return _acked == _ack;
+  uint8_t opcode() const {
+    return _opcode;
   }
-
-  void ack(size_t len, uint32_t time);
-  size_t send(AsyncClient *client);
+  bool mask() const {
+    return _mask;
+  }
+  size_t size() const {
+    return _WSbuffer ? _WSbuffer->size() : 0U;
+  }
+  uint8_t *data() const {
+    return _WSbuffer ? _WSbuffer->data() : nullptr;
+  }
 };
 
 class AsyncWebSocketClient {
@@ -152,28 +161,42 @@ private:
   AsyncWebSocket *_server;
   uint32_t _clientId;
   AwsClientStatus _status;
-#ifdef ESP32
-  mutable std::recursive_mutex _lock;
-#endif
-  std::deque<AsyncWebSocketControl> _controlQueue;
-  std::deque<AsyncWebSocketMessage> _messageQueue;
-  bool closeWhenFull = true;
-
   uint8_t _pstate;
-  AwsFrameInfo _pinfo;
-
   uint32_t _lastMessageTime;
   uint32_t _keepAlivePeriod;
+  mutable asyncsrv::mutex_type _queue_lock;
+  std::deque<AsyncWebSocketMessage> _controlQueue;
+  std::deque<AsyncWebSocketMessage> _messageQueue;
+  bool _closeWhenFull = false;
+
+  // A message is dequeued as soon as it's fully add()'ed to the TCP output
+  // buffer -- delivery is TCP's job from that point on, so there's no ack
+  // bookkeeping here. Only one frame is ever being built/added at a time,
+  // shared uniformly between control and data frames: deliberately one set
+  // of fields, not one per queue. All are zero/false when idle.
+  bool _sendingControl{false};  // while non-idle: is the in-flight frame from _controlQueue.front() (true) or _messageQueue.front() (false)?
+  size_t _sent{0};              // data messages only: payload bytes of _messageQueue.front() committed across already-completed frames
+  uint8_t _maskKey[4]{};        // meaningful only while non-idle and the target message is masked
+  size_t _framePayloadLen{0};   // payload length committed to the header of the in-flight frame
+  size_t _frameSent{0};         // bytes of (header+in-flight payload) committed so far for the in-flight frame; 0 when idle
+
+  AwsFrameInfo _pinfo;
 
   bool _queueControl(uint8_t opcode, const uint8_t *data = NULL, size_t len = 0, bool mask = false);
   bool _queueMessage(AsyncWebSocketSharedBuffer buffer, uint8_t opcode = WS_TEXT, bool mask = false);
-  void _runQueue();
-  void _clearQueue();
+  // caller must hold _queue_lock via `lock`; _runQueue may unlock() it (e.g.
+  // before a close() that can synchronously destroy *this) and never touch
+  // `this` again afterward -- callers must do the same once this returns.
+  void _runQueue(asyncsrv::unique_lock_type &lock);
+
+  // this function is called when a text message is received, in order to copy the buffer and place a null terminator at the end of the buffer for easier handling of text messages.
+  // Returns true on success, false on failure (e.g. memory allocation failure)
+  bool _handleDataEvent(uint8_t *data, size_t len, bool endOfPaquet);
 
 public:
   void *_tempObject;
 
-  AsyncWebSocketClient(AsyncWebServerRequest *request, AsyncWebSocket *server);
+  AsyncWebSocketClient(AsyncClient *client, AsyncWebSocket *server);
   ~AsyncWebSocketClient();
 
   // client id increments for the given server
@@ -199,29 +222,39 @@ public:
     return _pinfo;
   }
 
-  //  - If "true" (default), the connection will be closed if the message queue is full.
+  // CloseClientOnQueueFull:
+  //
+  // - If "true", the client will be closed if the message queue becomes full.
   // This is the default behavior in yubox-node-org, which is not silently discarding messages but instead closes the connection.
   // The big issue with this behavior is  that is can cause the UI to automatically re-create a new WS connection, which can be filled again,
   // and so on, causing a resource exhaustion.
+  // Also this can lead to a crash as explained in this issue: https://github.com/ESP32Async/ESPAsyncWebServer/issues/433
   //
-  // - If "false", the incoming message will be discarded if the queue is full.
+  // - If "false" (default in this library), the incoming message will be discarded if the queue is full.
   // This is the default behavior in the original ESPAsyncWebServer library from me-no-dev.
   // This behavior allows the best performance at the expense of unreliable message delivery in case the queue is full (some messages may be lost).
   //
-  // - In any case, when the queue is full, a message is logged.
-  // - IT is recommended to use the methods queueIsFull(), availableForWriteAll(), availableForWrite(clientId) to check if the queue is full before sending a message.
+  // With recent refactorings of the library, the queue is barely used and the library supports a fast sending rate of messages. So if the queue is growing:
+  //  - either the server is sending messages at an insane fast rate, faster than what the client can acknowledge, which can be the case if the client is slow or if the messages are big and the network is slow,
+  //  - or there is a network issue causing the client to not receive messages, or network is broken. In that case, if the network is broken, the queue will fill temporarily until the connection is closed and client removed.
   //
-  // Usage:
-  //  - can be set in the onEvent listener when connecting (event type is: WS_EVT_CONNECT)
+  // In case your application requires a fast and high frequency message sending and you foresee some queue usage, you can:
+  //  - increase the queue side to allow some room
+  //  - check some functions status before or when sending in order to decrease your sending rate to let the queue drain, or take action by closing this client if necessary.
   //
-  // Use cases:,
-  // - if using websocket to send logging messages, maybe some loss is acceptable.
-  // - But if using websocket to send UI update messages, maybe the connection should be closed and the UI redrawn.
+  // This has to be an application-specific deicison that the library cannot take for you.
+  // Here are a list of some functions that you can use and check the boolean value returned:
+  // - the send methods
+  // - queueIsFull()
+  // - availableForWriteAll()
+  // - availableForWrite(clientId)
+  //
+  // When the queue is full, a message is logged in case it is discarded.
   void setCloseClientOnQueueFull(bool close) {
-    closeWhenFull = close;
+    _closeWhenFull = close;
   }
   bool willCloseClientOnQueueFull() const {
-    return closeWhenFull;
+    return _closeWhenFull;
   }
 
   IPAddress remoteIP() const;
@@ -244,8 +277,8 @@ public:
   }
 
   // data packets
-  void message(AsyncWebSocketSharedBuffer buffer, uint8_t opcode = WS_TEXT, bool mask = false) {
-    _queueMessage(buffer, opcode, mask);
+  bool message(AsyncWebSocketSharedBuffer buffer, uint8_t opcode = WS_TEXT, bool mask = false) {
+    return _queueMessage(buffer, opcode, mask);
   }
   bool queueIsFull() const;
   size_t queueLen() const;
@@ -295,9 +328,7 @@ private:
   AwsEventHandler _eventHandler;
   AwsHandshakeHandler _handshakeHandler;
   bool _enabled;
-#ifdef ESP32
-  mutable std::mutex _lock;
-#endif
+  mutable asyncsrv::mutex_type _ws_clients_lock;
 
 public:
   typedef enum {
@@ -388,8 +419,8 @@ public:
   AsyncWebSocketClient *_newClient(AsyncWebServerRequest *request);
   void _handleDisconnect(AsyncWebSocketClient *client);
   void _handleEvent(AsyncWebSocketClient *client, AwsEventType type, void *arg, uint8_t *data, size_t len);
-  bool canHandle(AsyncWebServerRequest *request) const override final;
-  void handleRequest(AsyncWebServerRequest *request) override final;
+  bool canHandle(AsyncWebServerRequest *request) const final;
+  void handleRequest(AsyncWebServerRequest *request) final;
 
   //  messagebuffer functions/objects.
   AsyncWebSocketMessageBuffer *makeBuffer(size_t size = 0);
@@ -405,12 +436,17 @@ class AsyncWebSocketResponse : public AsyncWebServerResponse {
 private:
   String _content;
   AsyncWebSocket *_server;
+  AsyncWebServerRequest *_request;
+  // this call back will switch AsyncTCP client to WebSocket
+  void _switchClient();
 
 public:
   AsyncWebSocketResponse(const String &key, AsyncWebSocket *server);
-  void _respond(AsyncWebServerRequest *request);
-  size_t _ack(AsyncWebServerRequest *request, size_t len, uint32_t time);
-  bool _sourceValid() const {
+  void _respond(AsyncWebServerRequest *request) override;
+  size_t _ack(AsyncWebServerRequest *request, size_t len, uint32_t time) override {
+    return 0;
+  };
+  bool _sourceValid() const override {
     return true;
   }
 };
@@ -481,9 +517,6 @@ private:
       }
     } else if (type == WS_EVT_DATA) {
       AwsFrameInfo *info = (AwsFrameInfo *)arg;
-      if (info->opcode == WS_TEXT) {
-        data[len] = 0;
-      }
       if (info->final && info->index == 0 && info->len == len) {
         if (_onMessage) {
           _onMessage(server, client, data, len);
@@ -496,5 +529,3 @@ private:
     }
   };
 };
-
-#endif /* ASYNCWEBSOCKET_H_ */

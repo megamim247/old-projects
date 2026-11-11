@@ -1,22 +1,87 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "CommentBuilder",
+      "request": "launch",
+      "mainClass": "Test_1.CommentBuilder",
+      "projectName": "Programming_1cf15d63"
+    },
+    {
+      "type": "java",
+      "name": "Abalone",
+      "request": "launch",
+      "mainClass": "Lab8.Abalone",
+      "projectName": "Programming_1cf15d63"
+    },
+    {
+      "type": "java",
+      "name": "Lab3",
+      "request": "launch",
+      "mainClass": "Lab3",
+      "projectName": "Programming_1cf15d63"
+    },
+    {
+      "type": "java",
+      "name": "Lab2",
+      "request": "launch",
+      "mainClass": "Lab2",
+      "projectName": "Programming_1cf15d63"
+    },
+    {
+      "type": "java",
+      "name": "HelloWorldpp",
+      "request": "launch",
+      "mainClass": "HelloWorldpp",
+      "projectName": "Programming_1cf15d63"
+    },
+    {
+      "type": "java",
+      "name": "Hello",
+      "request": "launch",
+      "mainClass": "Hello",
+      "projectName": "Programming_1cf15d63"
+    },
+    {
+      "type": "java",
+      "name": "HelloWorldQ3",
+      "request": "launch",
+      "mainClass": "HelloWorldQ3",
+      "projectName": "Programming_1cf15d63"
+    },
+    {
+      "name": "Python Debugger: Current File",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Python Debugger: Current File",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Gits/Programming",
+      "program": "c:/Gits/Programming/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
         {
-            "name": "Python Debugger: Current File",
-            "type": "debugpy",
-            "request": "launch",
-            "program": "${file}",
-            "console": "integratedTerminal"
-        },
-        {
-            "name": "Python Debugger: Current File",
-            "type": "debugpy",
-            "request": "launch",
-            "program": "${file}",
-            "console": "integratedTerminal"
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
         }
-    ]
+      ]
+    }
+  ]
 }
